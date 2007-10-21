@@ -1,0 +1,241 @@
+--- 
+role_privilege_0015: 
+  role_id: 2
+  privilege_id: 80
+role_privilege_0036: 
+  role_id: 4
+  privilege_id: 81
+role_privilege_0057: 
+  role_id: 6
+  privilege_id: 82
+role_privilege_0078: 
+  role_id: 8
+  privilege_id: 83
+role_privilege_0080: 
+  role_id: 8
+  privilege_id: 85
+role_privilege_0016: 
+  role_id: 2
+  privilege_id: 81
+role_privilege_0037: 
+  role_id: 4
+  privilege_id: 82
+role_privilege_0058: 
+  role_id: 6
+  privilege_id: 83
+role_privilege_0079: 
+  role_id: 8
+  privilege_id: 84
+role_privilege_0060: 
+  role_id: 6
+  privilege_id: 85
+role_privilege_0038: 
+  role_id: 4
+  privilege_id: 83
+role_privilege_0059: 
+  role_id: 6
+  privilege_id: 84
+role_privilege_0017: 
+  role_id: 2
+  privilege_id: 82
+role_privilege_0040: 
+  role_id: 4
+  privilege_id: 85
+role_privilege_0018: 
+  role_id: 2
+  privilege_id: 83
+role_privilege_0039: 
+  role_id: 4
+  privilege_id: 84
+role_privilege_0061: 
+  role_id: 7
+  privilege_id: 76
+role_privilege_0020: 
+  role_id: 2
+  privilege_id: 85
+role_privilege_0019: 
+  role_id: 2
+  privilege_id: 84
+role_privilege_0041: 
+  role_id: 5
+  privilege_id: 76
+role_privilege_0062: 
+  role_id: 7
+  privilege_id: 77
+role_privilege_0021: 
+  role_id: 3
+  privilege_id: 76
+role_privilege_0042: 
+  role_id: 5
+  privilege_id: 77
+role_privilege_0063: 
+  role_id: 7
+  privilege_id: 78
+role_privilege_0001: 
+  role_id: 1
+  privilege_id: 76
+role_privilege_0022: 
+  role_id: 3
+  privilege_id: 77
+role_privilege_0043: 
+  role_id: 5
+  privilege_id: 78
+role_privilege_0064: 
+  role_id: 7
+  privilege_id: 79
+role_privilege_0002: 
+  role_id: 1
+  privilege_id: 77
+role_privilege_0023: 
+  role_id: 3
+  privilege_id: 78
+role_privilege_0044: 
+  role_id: 5
+  privilege_id: 79
+role_privilege_0065: 
+  role_id: 7
+  privilege_id: 80
+role_privilege_0003: 
+  role_id: 1
+  privilege_id: 78
+role_privilege_0024: 
+  role_id: 3
+  privilege_id: 79
+role_privilege_0045: 
+  role_id: 5
+  privilege_id: 80
+role_privilege_0066: 
+  role_id: 7
+  privilege_id: 81
+role_privilege_0004: 
+  role_id: 1
+  privilege_id: 79
+role_privilege_0025: 
+  role_id: 3
+  privilege_id: 80
+role_privilege_0046: 
+  role_id: 5
+  privilege_id: 81
+role_privilege_0067: 
+  role_id: 7
+  privilege_id: 82
+role_privilege_0005: 
+  role_id: 1
+  privilege_id: 80
+role_privilege_0026: 
+  role_id: 3
+  privilege_id: 81
+role_privilege_0047: 
+  role_id: 5
+  privilege_id: 82
+role_privilege_0068: 
+  role_id: 7
+  privilege_id: 83
+role_privilege_0027: 
+  role_id: 3
+  privilege_id: 82
+role_privilege_0070: 
+  role_id: 7
+  privilege_id: 85
+role_privilege_0048: 
+  role_id: 5
+  privilege_id: 83
+role_privilege_0069: 
+  role_id: 7
+  privilege_id: 84
+role_privilege_0006: 
+  role_id: 1
+  privilege_id: 81
+role_privilege_0071: 
+  role_id: 8
+  privilege_id: 76
+role_privilege_0049: 
+  role_id: 5
+  privilege_id: 84
+role_privilege_0007: 
+  role_id: 1
+  privilege_id: 82
+role_privilege_0050: 
+  role_id: 5
+  privilege_id: 85
+role_privilege_0028: 
+  role_id: 3
+  privilege_id: 83
+role_privilege_0030: 
+  role_id: 3
+  privilege_id: 85
+role_privilege_0008: 
+  role_id: 1
+  privilege_id: 83
+role_privilege_0029: 
+  role_id: 3
+  privilege_id: 84
+role_privilege_0051: 
+  role_id: 6
+  privilege_id: 76
+role_privilege_0072: 
+  role_id: 8
+  privilege_id: 77
+role_privilege_0010: 
+  role_id: 1
+  privilege_id: 85
+role_privilege_0031: 
+  role_id: 4
+  privilege_id: 76
+role_privilege_0052: 
+  role_id: 6
+  privilege_id: 77
+role_privilege_0073: 
+  role_id: 8
+  privilege_id: 78
+role_privilege_0074: 
+  role_id: 8
+  privilege_id: 79
+role_privilege_0011: 
+  role_id: 2
+  privilege_id: 76
+role_privilege_0032: 
+  role_id: 4
+  privilege_id: 77
+role_privilege_0009: 
+  role_id: 1
+  privilege_id: 84
+role_privilege_0053: 
+  role_id: 6
+  privilege_id: 78
+role_privilege_0054: 
+  role_id: 6
+  privilege_id: 79
+role_privilege_0012: 
+  role_id: 2
+  privilege_id: 77
+role_privilege_0033: 
+  role_id: 4
+  privilege_id: 78
+role_privilege_0075: 
+  role_id: 8
+  privilege_id: 80
+role_privilege_0076: 
+  role_id: 8
+  privilege_id: 81
+role_privilege_0034: 
+  role_id: 4
+  privilege_id: 79
+role_privilege_0013: 
+  role_id: 2
+  privilege_id: 78
+role_privilege_0055: 
+  role_id: 6
+  privilege_id: 80
+role_privilege_0056: 
+  role_id: 6
+  privilege_id: 81
+role_privilege_0014: 
+  role_id: 2
+  privilege_id: 79
+role_privilege_0035: 
+  role_id: 4
+  privilege_id: 80
+role_privilege_0077: 
+  role_id: 8
+  privilege_id: 82

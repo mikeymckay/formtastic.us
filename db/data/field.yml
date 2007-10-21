@@ -1,0 +1,1765 @@
+--- 
+field_0108: 
+  name: Stavudine dosage
+  concept_id: 369
+  default_value: 
+  date_created: 2007-03-16 23:00:15 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 317
+  table_name: 
+  description: 
+  date_changed: 2007-03-16 23:00:15 +01:00
+  attribute_name: 
+  select_multiple: false
+  field_type: 4
+field_0050: 
+  name: History+Examination Genital Cancer of cervix
+  concept_id: 287
+  default_value: ""
+  date_created: 2006-11-16 22:39:13 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 259
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:28:55 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0022: 
+  name: Lipodystrophy
+  concept_id: 95
+  default_value: ""
+  date_created: 2006-11-03 11:55:08 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 108
+  table_name: ""
+  description: ""
+  date_changed: 2006-11-08 11:04:49 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0080: 
+  name: History+Examination Weight Unintentional weight loss in the absence of concurrent illness
+  concept_id: 317
+  default_value: ""
+  date_created: 2006-11-16 22:39:53 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 289
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-25 10:23:31 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0109: 
+  name: Morning dose
+  concept_id: 370
+  default_value: 
+  date_created: 2007-03-16 23:04:35 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 318
+  table_name: 
+  description: 
+  date_changed: 2007-03-16 23:04:35 +01:00
+  attribute_name: 
+  select_multiple: false
+  field_type: 4
+field_0051: 
+  name: Examination Weight+Height Unexplained severe wasting, stunting or malnutrition not responding to treatment
+  concept_id: 288
+  default_value: ""
+  date_created: 2006-11-16 22:39:14 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 260
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:01:26 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0023: 
+  name: Lactic acidosis
+  concept_id: 94
+  default_value: ""
+  date_created: 2006-11-03 11:55:08 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 109
+  table_name: ""
+  description: ""
+  date_changed: 2006-11-08 11:04:49 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0052: 
+  name: History+Examination Infections Recurrent severe presumed bacterial infections (eg empyema, sepsis, meningitis, bone or joint)
+  concept_id: 289
+  default_value: ""
+  date_created: 2006-11-16 22:39:15 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 261
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:11:07 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0024: 
+  name: Skin rash
+  concept_id: 93
+  default_value: ""
+  date_created: 2006-11-03 11:55:09 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 110
+  table_name: ""
+  description: ""
+  date_changed: 2006-11-08 11:04:49 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0081: 
+  name: Examination Skin Minor mucocutaneous manifestations (seborrheic dermatitis, prurigo, fungal nail infections, recurrent oral ulcerations, angular cheilitis)
+  concept_id: 318
+  default_value: ""
+  date_created: 2006-11-16 22:39:54 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 290
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:50:07 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0053: 
+  name: Examination Mouth Oral candidiasis (thrush)
+  concept_id: 290
+  default_value: ""
+  date_created: 2006-11-16 22:39:16 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 262
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:00:24 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0025: 
+  name: Peripheral neuropathy
+  concept_id: 91
+  default_value: ""
+  date_created: 2006-11-03 11:55:09 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 111
+  table_name: ""
+  description: ""
+  date_changed: 2006-11-08 11:04:49 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0082: 
+  name: History+Examination Respiratory-tract Recurrent upper respiratory tract infections (e.g. bacterial sinusitis)
+  concept_id: 319
+  default_value: ""
+  date_created: 2006-11-16 22:39:56 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 291
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:50:58 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0054: 
+  name: "Examination Mouth Oral hairy leukoplakia "
+  concept_id: 291
+  default_value: ""
+  date_created: 2006-11-16 22:39:18 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 263
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:29:39 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0026: 
+  name: Hepatitis
+  concept_id: 92
+  default_value: ""
+  date_created: 2006-11-03 11:55:09 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 112
+  table_name: ""
+  description: ""
+  date_changed: 2006-11-08 11:04:49 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0055: 
+  name: History+Examination Weight Weight loss more than 10%
+  concept_id: 292
+  default_value: ""
+  date_created: 2006-11-16 22:39:19 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 264
+  table_name: ""
+  description: ""
+  date_changed: 2007-02-01 10:10:07 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0110: 
+  name: Evening dose
+  concept_id: 371
+  default_value: 
+  date_created: 2007-03-16 23:04:52 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 319
+  table_name: 
+  description: 
+  date_changed: 2007-03-16 23:04:52 +01:00
+  attribute_name: 
+  select_multiple: false
+  field_type: 4
+field_0027: 
+  name: Total number of whole ARV tablets remaining
+  concept_id: 97
+  default_value: ""
+  date_created: 2006-11-03 14:23:42 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 113
+  table_name: ""
+  description: ""
+  date_changed: 2007-02-27 12:19:33 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 1
+field_0083: 
+  name: Received insecticide treated net (ITN)
+  concept_id: 326
+  default_value: ""
+  date_created: 2006-11-20 09:38:13 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 292
+  table_name: ""
+  description: ""
+  date_changed: 2006-11-20 09:38:13 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0056: 
+  name: History Diarrhoea Chronic diarrhoea for  more than 1 month
+  concept_id: 293
+  default_value: ""
+  date_created: 2006-11-16 22:39:20 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 265
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:30:58 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0111: 
+  name: Continue treatment at current clinic
+  concept_id: 372
+  default_value: 
+  date_created: 2007-03-16 23:08:23 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 320
+  table_name: 
+  description: 
+  date_changed: 2007-03-16 23:08:23 +01:00
+  attribute_name: 
+  select_multiple: false
+  field_type: 2
+field_0028: 
+  name: Guardian
+  concept_id: 30
+  default_value: ""
+  date_created: 2006-11-04 12:14:16 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 114
+  table_name: Relationship
+  description: ""
+  date_changed: 2006-11-19 22:54:17 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 7
+field_0084: 
+  name: Pregnant
+  concept_id: 328
+  default_value: ""
+  date_created: 2006-11-23 07:54:22 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 293
+  table_name: ""
+  description: ""
+  date_changed: 2006-11-23 07:54:22 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0057: 
+  name: "History Fever Prolonged fever (intermittent or constant) for more than 1 month "
+  concept_id: 294
+  default_value: ""
+  date_created: 2006-11-16 22:39:21 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 266
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:31:29 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0112: 
+  name: Provider shown adherence data
+  concept_id: 388
+  default_value: 
+  date_created: 2007-05-04 15:32:35 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 321
+  table_name: 
+  description: 
+  date_changed: 2007-05-04 15:32:35 +02:00
+  attribute_name: 
+  select_multiple: false
+  field_type: 2
+field_0029: 
+  name: Weight
+  concept_id: 100
+  default_value: ""
+  date_created: 2006-11-04 12:49:49 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 115
+  table_name: ""
+  description: ""
+  date_changed: 2006-11-08 11:19:54 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 1
+field_0085: 
+  name: Other adult stage defining conditions
+  concept_id: 335
+  default_value: ""
+  date_created: 2006-12-02 18:14:30 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 294
+  table_name: ""
+  description: ""
+  date_changed: 2006-12-02 18:15:16 +01:00
+  attribute_name: ""
+  select_multiple: true
+  field_type: 11
+field_0113: 
+  name: Extended Staging Unspecified stage 4 condition
+  concept_id: 393
+  default_value: ""
+  date_created: 2007-05-21 15:45:12 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 322
+  table_name: ""
+  description: ""
+  date_changed: 2007-05-21 16:46:47 +02:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0086: 
+  name: Other pediatric stage defining conditions
+  concept_id: 334
+  default_value: ""
+  date_created: 2006-12-02 18:15:13 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 295
+  table_name: ""
+  description: ""
+  date_changed: 2006-12-02 18:45:09 +01:00
+  attribute_name: ""
+  select_multiple: true
+  field_type: 11
+field_0058: 
+  name: "History+Examination TB Active Pulmonary Tuberculosis "
+  concept_id: 295
+  default_value: ""
+  date_created: 2006-11-16 22:39:23 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 267
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:32:05 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0114: 
+  name: Extended Staging Unspecified stage 3 condition
+  concept_id: 392
+  default_value: ""
+  date_created: 2007-05-21 15:45:35 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 323
+  table_name: ""
+  description: ""
+  date_changed: 2007-05-21 16:46:45 +02:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0087: 
+  name: Temperature
+  concept_id: 336
+  default_value: ""
+  date_created: 2006-12-04 15:47:05 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 296
+  table_name: ""
+  description: ""
+  date_changed: 2006-12-04 15:47:05 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 1
+field_0059: 
+  name: History TB PTB within the past 2 years
+  concept_id: 296
+  default_value: ""
+  date_created: 2006-11-16 22:39:24 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 268
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:32:49 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0088: 
+  name: Weight when ART was started
+  concept_id: 100
+  default_value: ""
+  date_created: 2006-12-07 22:55:45 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 297
+  table_name: ""
+  description: ""
+  date_changed: 2006-12-07 22:55:45 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 1
+field_0001: 
+  name: Recipient of medication
+  concept_id: 98
+  default_value: ""
+  date_created: 2006-10-19 17:23:40 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 21
+  table_name: ""
+  description: ""
+  date_changed: 2006-11-08 11:04:46 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0115: 
+  name: Ever received ART
+  concept_id: 394
+  default_value: ""
+  date_created: 2007-05-21 21:54:53 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 324
+  table_name: ""
+  description: ""
+  date_changed: 2007-06-28 10:34:30 +02:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0030: 
+  name: Location of ART initiation
+  concept_id: 142
+  default_value: ""
+  date_created: 2006-11-15 10:21:33 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 116
+  table_name: ""
+  description: ""
+  date_changed: 2006-11-15 10:47:57 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 10
+field_0089: 
+  name: Height when ART was started
+  concept_id: 6
+  default_value: ""
+  date_created: 2006-12-07 22:56:17 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 298
+  table_name: ""
+  description: ""
+  date_changed: 2006-12-07 22:56:17 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 1
+field_0002: 
+  name: Agrees to be visited at home
+  concept_id: 1
+  default_value: ""
+  date_created: 2006-10-23 12:04:20 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 24
+  table_name: ""
+  description: ""
+  date_changed: 2006-12-28 15:37:02 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0116: 
+  name: Taken ART in last 2 weeks
+  concept_id: 395
+  default_value: 
+  date_created: 2007-05-21 21:56:33 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 325
+  table_name: 
+  description: 
+  date_changed: 2007-05-21 21:56:33 +02:00
+  attribute_name: 
+  select_multiple: false
+  field_type: 2
+field_0031: 
+  name: Date of ART initiation
+  concept_id: 143
+  default_value: ""
+  date_created: 2006-11-15 10:30:39 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 117
+  table_name: ""
+  description: ""
+  date_changed: 2006-11-15 10:30:39 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 5
+field_0003: 
+  name: Height
+  concept_id: 6
+  default_value: ""
+  date_created: 2006-10-23 12:04:35 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 26
+  table_name: ""
+  description: ""
+  date_changed: 2006-11-08 11:19:40 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 1
+field_0117: 
+  name: Has transfer letter
+  concept_id: 396
+  default_value: 
+  date_created: 2007-05-21 22:03:34 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 326
+  table_name: 
+  description: 
+  date_changed: 2007-05-21 22:03:34 +02:00
+  attribute_name: 
+  select_multiple: false
+  field_type: 2
+field_0060: 
+  name: History+Examination Infections Severe bacterial infections (eg pneumonia, pyomyositis, sepsis)
+  concept_id: 297
+  default_value: ""
+  date_created: 2006-11-16 22:39:25 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 269
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:33:32 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0032: 
+  name: Asymptomatic
+  concept_id: 268
+  default_value: 
+  date_created: 2006-11-16 22:38:48 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 240
+  table_name: 
+  description: 
+  date_changed: 2006-11-16 22:39:50 +01:00
+  attribute_name: 
+  select_multiple: false
+  field_type: 2
+field_0004: 
+  name: Date of first positive HIV test
+  concept_id: 7
+  default_value: ""
+  date_created: 2006-10-23 12:04:37 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 27
+  table_name: ""
+  description: ""
+  date_changed: 2006-11-08 11:04:46 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 5
+field_0118: 
+  name: Guardian present
+  concept_id: 398
+  default_value: 
+  date_created: 2007-06-07 14:53:19 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 327
+  table_name: 
+  description: 
+  date_changed: 2007-06-07 14:53:19 +02:00
+  attribute_name: 
+  select_multiple: false
+  field_type: 2
+field_0033: 
+  name: Examination Nodes Persistent Generalised lymphadenopathy
+  concept_id: 269
+  default_value: ""
+  date_created: 2006-11-16 22:38:49 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 241
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:51:54 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0005: 
+  name: Location of first positive HIV test
+  concept_id: 8
+  default_value: ""
+  date_created: 2006-10-23 12:04:39 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 28
+  table_name: ""
+  description: ""
+  date_changed: 2006-11-15 10:47:46 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 10
+field_0090: 
+  name: Prescription time period
+  concept_id: 345
+  default_value: ""
+  date_created: 2006-12-10 23:42:37 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 299
+  table_name: ""
+  description: ""
+  date_changed: 2007-03-16 23:06:46 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 1
+field_0119: 
+  name: Patient present
+  concept_id: 399
+  default_value: 
+  date_created: 2007-06-07 14:53:47 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 328
+  table_name: 
+  description: 
+  date_changed: 2007-06-07 14:53:47 +02:00
+  attribute_name: 
+  select_multiple: false
+  field_type: 2
+field_0061: 
+  name: Examination Mouth Acute ulcerative mouth infections
+  concept_id: 298
+  default_value: ""
+  date_created: 2006-11-16 22:39:26 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 270
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:33:58 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0034: 
+  name: Examination+Investigation Respiratory-tract Pneumocystis carinii pneumonia
+  concept_id: 271
+  default_value: ""
+  date_created: 2006-11-16 22:38:52 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 243
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:52:22 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0006: 
+  name: Mycobacterium tuberculosis, extrapulmonary
+  concept_id: 10
+  default_value: 
+  date_created: 2006-10-23 12:04:42 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 30
+  table_name: 
+  description: 
+  date_changed: 2006-11-08 11:04:46 +01:00
+  attribute_name: 
+  select_multiple: false
+  field_type: 2
+field_0091: 
+  name: Examination General Visceral leishmaniasis
+  concept_id: 347
+  default_value: ""
+  date_created: 2007-01-11 15:58:03 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 300
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:58:03 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0062: 
+  name: Investigations Lab Unexplained anaemia, neutropenia or thrombocytopenia
+  concept_id: 299
+  default_value: ""
+  date_created: 2006-11-16 22:39:28 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 271
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:34:49 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0035: 
+  name: History+Examination CNS Toxoplasmosis of the brain
+  concept_id: 272
+  default_value: ""
+  date_created: 2006-11-16 22:38:54 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 244
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 14:42:23 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0007: 
+  name: WHO stage
+  concept_id: 12
+  default_value: ""
+  date_created: 2006-10-23 12:04:43 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 32
+  table_name: ""
+  description: ""
+  date_changed: 2006-11-08 11:04:47 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 9
+field_0092: 
+  name: Perform extended staging
+  concept_id: 348
+  default_value: ""
+  date_created: 2007-01-15 14:29:51 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 301
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-15 14:29:51 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0063: 
+  name: Examination Weight+Height Moderate unexplained malnutrition
+  concept_id: 300
+  default_value: ""
+  date_created: 2006-11-16 22:39:29 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 272
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:35:26 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0036: 
+  name: "Examination+Investigation GI-tract Cryptosporidiosis or Isosporiasis "
+  concept_id: 273
+  default_value: ""
+  date_created: 2006-11-16 22:38:55 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 245
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:52:59 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0008: 
+  name: Lab CD4 CD4 count
+  concept_id: 14
+  default_value: ""
+  date_created: 2006-10-23 12:04:46 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 34
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-16 12:03:13 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 1
+field_0093: 
+  name: Lab CD4 CD4 count available
+  concept_id: 349
+  default_value: ""
+  date_created: 2007-01-15 23:34:45 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 302
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-16 12:03:28 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0064: 
+  name: Examination General TB lymphadenopathy
+  concept_id: 303
+  default_value: ""
+  date_created: 2006-11-16 22:39:30 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 273
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:36:14 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0009: 
+  name: Reason antiretrovirals started
+  concept_id: 15
+  default_value: 
+  date_created: 2006-10-23 12:04:48 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 35
+  table_name: 
+  description: 
+  date_changed: 2006-11-08 11:04:47 +01:00
+  attribute_name: 
+  select_multiple: false
+  field_type: 2
+field_0065: 
+  name: History+Examination Pneumonia Severe recurrent bacterial pneumonia
+  concept_id: 302
+  default_value: ""
+  date_created: 2006-11-16 22:39:31 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 274
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:37:40 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0120: 
+  name: Transfer out destination
+  concept_id: 389
+  default_value: ""
+  date_created: 2007-06-11 13:48:24 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 329
+  table_name: ""
+  description: ""
+  date_changed: 2007-06-11 14:17:51 +02:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 10
+field_0037: 
+  name: "Recurrent severe presumed pneumonia "
+  concept_id: 274
+  default_value: 
+  date_created: 2006-11-16 22:38:57 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 246
+  table_name: 
+  description: 
+  date_changed: 2006-11-16 22:40:11 +01:00
+  attribute_name: 
+  select_multiple: false
+  field_type: 2
+field_0094: 
+  name: Lab CD4 CD4 count less than 250
+  concept_id: 321
+  default_value: ""
+  date_created: 2007-01-15 23:35:23 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 303
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-16 12:03:36 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0066: 
+  name: Examination+Investigation Pneumonia Symptomatic lymphoid interstitial pneumonia
+  concept_id: 303
+  default_value: ""
+  date_created: 2006-11-16 22:39:33 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 275
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:39:42 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0121: 
+  name: Transfer in location
+  concept_id: 402
+  default_value: ""
+  date_created: 2007-06-28 09:46:10 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 330
+  table_name: ""
+  description: ""
+  date_changed: 2007-06-28 09:49:03 +02:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 10
+field_0038: 
+  name: History+Examination CNS Cryptococcosis, extrapulmonary (e.g. cryptococcal meningitis)
+  concept_id: 275
+  default_value: ""
+  date_created: 2006-11-16 22:38:58 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 247
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 14:40:53 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0095: 
+  name: Lab CD4 Most recent sample collection date
+  concept_id: 351
+  default_value: ""
+  date_created: 2007-01-15 23:35:59 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 304
+  table_name: ""
+  description: ""
+  date_changed: 2007-02-01 09:16:53 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 5
+field_0067: 
+  name: Examination+Investigation Lung Chronic HIV lung disease, including bronchiectasis
+  concept_id: 304
+  default_value: ""
+  date_created: 2006-11-16 22:39:34 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 276
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:40:30 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0122: 
+  name: Ever registered at ART clinic
+  concept_id: 403
+  default_value: ""
+  date_created: 2007-06-28 10:16:10 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 331
+  table_name: ""
+  description: ""
+  date_changed: 2007-06-28 10:34:07 +02:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0039: 
+  name: History+Examination General Cytomegalovirus of an organ other than liver, spleen or lymph node
+  concept_id: 276
+  default_value: ""
+  date_created: 2006-11-16 22:38:59 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 248
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 14:43:55 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0096: 
+  name: Lab CD4 CD4 percentage available
+  concept_id: 350
+  default_value: ""
+  date_created: 2007-01-16 07:38:05 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 305
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-16 12:03:54 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0068: 
+  name: Examination+Investigation Heart HIV-associated cardiomyopathy
+  concept_id: 305
+  default_value: ""
+  date_created: 2006-11-16 22:39:35 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 277
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:41:21 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0123: 
+  name: ARV number at that site
+  concept_id: 404
+  default_value: ""
+  date_created: 2007-06-28 10:17:14 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 332
+  table_name: ""
+  description: ""
+  date_changed: 2007-07-01 19:43:49 +02:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 1
+field_0097: 
+  name: Lab CD4 CD4 percentage less than 25
+  concept_id: 352
+  default_value: ""
+  date_created: 2007-01-16 07:38:40 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 306
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-16 12:04:02 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0010: 
+  name: Referred by PMTCT
+  concept_id: 17
+  default_value: ""
+  date_created: 2006-10-23 12:05:26 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 36
+  table_name: ""
+  description: ""
+  date_changed: 2006-11-08 11:56:51 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0069: 
+  name: Examination+Investigation Kidney HIV-associated nephropathy
+  concept_id: 306
+  default_value: ""
+  date_created: 2006-11-16 22:39:37 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 278
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:42:03 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0124: 
+  name: Site transferred from
+  concept_id: 402
+  default_value: ""
+  date_created: 2007-06-28 10:24:59 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 333
+  table_name: ""
+  description: ""
+  date_changed: 2007-06-28 11:54:04 +02:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 10
+field_0098: 
+  name: Provider
+  concept_id: 354
+  default_value: 
+  date_created: 2007-02-08 14:46:36 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 307
+  table_name: 
+  description: 
+  date_changed: 2007-02-08 14:46:36 +01:00
+  attribute_name: 
+  select_multiple: false
+  field_type: 4
+field_0011: 
+  name: ARV regimen
+  concept_id: 18
+  default_value: 
+  date_created: 2006-10-23 12:05:27 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 37
+  table_name: 
+  description: 
+  date_changed: 2006-11-08 11:04:47 +01:00
+  attribute_name: 
+  select_multiple: false
+  field_type: 2
+field_0125: 
+  name: Ever registered at ART clinic
+  concept_id: 403
+  default_value: 
+  date_created: 2007-06-28 10:36:15 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 334
+  table_name: 
+  description: 
+  date_changed: 2007-06-28 10:36:15 +02:00
+  attribute_name: 
+  select_multiple: false
+  field_type: 2
+field_0126: 
+  name: Provider shown patient BMI
+  concept_id: 405
+  default_value: 
+  date_created: 2007-06-29 14:48:48 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 335
+  table_name: 
+  description: 
+  date_changed: 2007-06-29 14:48:48 +02:00
+  attribute_name: 
+  select_multiple: false
+  field_type: 2
+field_0099: 
+  name: Other side effect
+  concept_id: 355
+  default_value: ""
+  date_created: 2007-02-22 15:13:06 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 308
+  table_name: ""
+  description: ""
+  date_changed: 2007-02-22 15:13:06 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0012: 
+  name: ARV formulation
+  concept_id: 20
+  default_value: 
+  date_created: 2006-10-23 12:05:30 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 39
+  table_name: 
+  description: 
+  date_changed: 2006-11-08 11:04:47 +01:00
+  attribute_name: 
+  select_multiple: false
+  field_type: 2
+field_0040: 
+  name: History+Examination Skin+General Herpes simplex infection, mucocutaneous for more than 1 month or visceral
+  concept_id: 277
+  default_value: ""
+  date_created: 2006-11-16 22:39:00 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 249
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 14:45:17 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0013: 
+  name: Number of ARV tablets dispensed
+  concept_id: 22
+  default_value: 
+  date_created: 2006-10-23 12:05:31 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 41
+  table_name: 
+  description: 
+  date_changed: 2006-11-08 11:04:47 +01:00
+  attribute_name: 
+  select_multiple: false
+  field_type: 1
+field_0070: 
+  name: History+Examination Abdomen Unexplained persistent hepatomegaly and splenomegaly
+  concept_id: 307
+  default_value: ""
+  date_created: 2006-11-16 22:39:38 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 279
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:42:58 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0041: 
+  name: History+Examination CNS Progressive multifocal leucoencephalopathy
+  concept_id: 278
+  default_value: ""
+  date_created: 2006-11-16 22:39:01 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 250
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 14:46:23 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0014: 
+  name: Lymphocyte count
+  concept_id: 23
+  default_value: 
+  date_created: 2006-10-23 12:05:31 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 42
+  table_name: 
+  description: 
+  date_changed: 2006-11-08 11:04:47 +01:00
+  attribute_name: 
+  select_multiple: false
+  field_type: 1
+field_0071: 
+  name: Examination Skin Papular itchy skin eruptions
+  concept_id: 308
+  default_value: ""
+  date_created: 2006-11-16 22:39:39 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 280
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:43:28 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0042: 
+  name: Examination General Disseminated endemic mycosis
+  concept_id: 279
+  default_value: ""
+  date_created: 2006-11-16 22:39:03 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 251
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 14:47:23 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0015: 
+  name: Outcome status
+  concept_id: 28
+  default_value: ""
+  date_created: 2006-10-23 12:05:36 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 47
+  table_name: ""
+  description: ""
+  date_changed: 2006-11-20 07:15:58 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0043: 
+  name: History+Examination GI-tract Candidiasis of oesophagus, trachea, bronchus
+  concept_id: 280
+  default_value: ""
+  date_created: 2006-11-16 22:39:04 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 252
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 14:48:30 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0072: 
+  name: Examination Skin Extensive wart virus infection
+  concept_id: 309
+  default_value: ""
+  date_created: 2006-11-16 22:39:40 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 281
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:43:45 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0044: 
+  name: History+Examination Respiratory-tract Atypical mycobacteriosis, disseminated or lung
+  concept_id: 281
+  default_value: ""
+  date_created: 2006-11-16 22:39:05 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 253
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 14:49:37 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0016: 
+  name: Prescribe Cotrimoxazole (CPT)
+  concept_id: 358
+  default_value: ""
+  date_created: 2006-10-23 12:05:38 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 50
+  table_name: ""
+  description: ""
+  date_changed: 2007-02-27 15:15:46 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0073: 
+  name: Examination Skin Extensive molluscum contagiosum
+  concept_id: 310
+  default_value: ""
+  date_created: 2006-11-16 22:39:42 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 282
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:44:18 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0045: 
+  name: History+Examination General Recurrent bacteraemia or sepsis with NTS
+  concept_id: 282
+  default_value: ""
+  date_created: 2006-11-16 22:39:06 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 254
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 14:50:59 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0100: 
+  name: Prescribe ARV starter pack
+  concept_id: 356
+  default_value: ""
+  date_created: 2007-02-27 14:54:49 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 309
+  table_name: ""
+  description: ""
+  date_changed: 2007-02-27 15:08:09 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0017: 
+  name: Number of CPT tablets dispensed
+  concept_id: 32
+  default_value: 
+  date_created: 2006-10-23 12:05:39 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 51
+  table_name: 
+  description: 
+  date_changed: 2006-11-08 11:04:47 +01:00
+  attribute_name: 
+  select_multiple: false
+  field_type: 1
+field_0074: 
+  name: History+Examination Mouth Recurrent oral ulcerations
+  concept_id: 311
+  default_value: ""
+  date_created: 2006-11-16 22:39:43 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 283
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:44:42 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0046: 
+  name: "History+Examination General Extrapulmonary tuberculosis (EPTB) "
+  concept_id: 283
+  default_value: ""
+  date_created: 2006-11-16 22:39:08 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 255
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 14:51:30 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0101: 
+  name: Prescribe Triomune (d4T, 3TC, NVP)
+  concept_id: 357
+  default_value: ""
+  date_created: 2007-02-27 15:07:19 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 310
+  table_name: ""
+  description: ""
+  date_changed: 2007-02-27 15:07:55 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0018: 
+  name: Lab CD4 CD4 percentage
+  concept_id: 34
+  default_value: ""
+  date_created: 2006-10-23 12:05:40 +02:00
+  creator: 1
+  changed_by: 1
+  field_id: 53
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-16 12:03:24 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 1
+field_0075: 
+  name: History+Examination Head Unexplained persistent parotid gland enlargement
+  concept_id: 312
+  default_value: ""
+  date_created: 2006-11-16 22:39:44 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 284
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:45:36 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0047: 
+  name: History+Examination General Lymphoma (cerebral or B-cell Non Hodgkin)
+  concept_id: 284
+  default_value: ""
+  date_created: 2006-11-16 22:39:09 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 256
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 14:51:59 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0102: 
+  name: Prescribe Insecticide Treated Net (ITN)
+  concept_id: 359
+  default_value: ""
+  date_created: 2007-02-27 15:09:58 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 311
+  table_name: ""
+  description: ""
+  date_changed: 2007-02-27 15:09:58 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0019: 
+  name: Is able to walk unaided
+  concept_id: 88
+  default_value: ""
+  date_created: 2006-11-03 10:48:38 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 105
+  table_name: ""
+  description: ""
+  date_changed: 2007-02-22 16:05:30 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0103: 
+  name: Whole tablets remaining and brought to clinic
+  concept_id: 363
+  default_value: ""
+  date_created: 2007-03-16 14:21:23 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 312
+  table_name: ""
+  description: ""
+  date_changed: 2007-03-16 14:21:23 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 1
+field_0076: 
+  name: Examination Mouth Lineal gingival erythema
+  concept_id: 313
+  default_value: ""
+  date_created: 2006-11-16 22:39:45 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 285
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:46:16 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0048: 
+  name: Examination Skin Kaposi's sarcoma
+  concept_id: 285
+  default_value: ""
+  date_created: 2006-11-16 22:39:10 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 257
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 14:52:16 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0049: 
+  name: History+Examination CNS HIV encephalopathy
+  concept_id: 286
+  default_value: ""
+  date_created: 2006-11-16 22:39:11 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 258
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 14:52:52 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0077: 
+  name: History+Examination Skin Herpes zoster (shingles)
+  concept_id: 314
+  default_value: ""
+  date_created: 2006-11-16 22:39:47 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 286
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:46:55 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0104: 
+  name: Whole tablets remaining but not brought to clinic
+  concept_id: 364
+  default_value: ""
+  date_created: 2007-03-16 14:22:21 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 313
+  table_name: ""
+  description: ""
+  date_changed: 2007-03-16 14:22:21 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 1
+field_0078: 
+  name: History+Examination Respiratory-tract Recurrent or chronic respiratory tract infections (sinusitis, otorrhoea, tonsillitis, otitis media)
+  concept_id: 315
+  default_value: ""
+  date_created: 2006-11-16 22:39:48 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 287
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:47:56 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0105: 
+  name: Refer patient to clinician
+  concept_id: 366
+  default_value: 
+  date_created: 2007-03-16 22:30:06 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 314
+  table_name: 
+  description: 
+  date_changed: 2007-03-16 22:30:06 +01:00
+  attribute_name: 
+  select_multiple: false
+  field_type: 2
+field_0079: 
+  name: Examination Hands+Feet Fungal nail infections
+  concept_id: 316
+  default_value: ""
+  date_created: 2006-11-16 22:39:49 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 288
+  table_name: ""
+  description: ""
+  date_changed: 2007-01-11 15:48:34 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0106: 
+  name: Continue ART
+  concept_id: 367
+  default_value: 
+  date_created: 2007-03-16 22:45:26 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 315
+  table_name: 
+  description: 
+  date_changed: 2007-03-16 22:45:26 +01:00
+  attribute_name: 
+  select_multiple: false
+  field_type: 2
+field_0020: 
+  name: Is at work/school
+  concept_id: 89
+  default_value: ""
+  date_created: 2006-11-03 10:48:59 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 106
+  table_name: ""
+  description: ""
+  date_changed: 2006-11-08 11:04:49 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0021: 
+  name: Anaemia
+  concept_id: 96
+  default_value: ""
+  date_created: 2006-11-03 11:55:08 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 107
+  table_name: ""
+  description: ""
+  date_changed: 2006-11-08 11:04:49 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2
+field_0107: 
+  name: Prescribe recommended dosage
+  concept_id: 368
+  default_value: ""
+  date_created: 2007-03-16 22:53:35 +01:00
+  creator: 1
+  changed_by: 1
+  field_id: 316
+  table_name: ""
+  description: ""
+  date_changed: 2007-03-19 07:38:44 +01:00
+  attribute_name: ""
+  select_multiple: false
+  field_type: 2

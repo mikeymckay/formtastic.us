@@ -1,0 +1,239 @@
+--- 
+drug_0008: 
+  name: Abacavir 300
+  concept_id: 379
+  dosage_form: 
+  date_created: 2007-04-18 10:20:28 +02:00
+  creator: 1
+  therapy_class: 
+  route: 
+  dose_strength: 
+  units: 
+  drug_id: 10
+  combination: true
+  minimum_dose: 
+  daily_mg_per_kg: 
+  inn: 
+  shelf_life: 
+  maximum_dose: 
+drug_0010: 
+  name: Lopinavir 133 Ritonavir 33
+  concept_id: 381
+  dosage_form: 
+  date_created: 2007-04-18 10:20:28 +02:00
+  creator: 1
+  therapy_class: 
+  route: 
+  dose_strength: 
+  units: 
+  drug_id: 12
+  combination: true
+  minimum_dose: 
+  daily_mg_per_kg: 
+  inn: 
+  shelf_life: 
+  maximum_dose: 
+drug_0009: 
+  name: Didanosine 125
+  concept_id: 380
+  dosage_form: 
+  date_created: 2007-04-18 10:20:28 +02:00
+  creator: 1
+  therapy_class: 
+  route: 
+  dose_strength: 
+  units: 
+  drug_id: 11
+  combination: true
+  minimum_dose: 
+  daily_mg_per_kg: 
+  inn: 
+  shelf_life: 
+  maximum_dose: 
+drug_0011: 
+  name: Didanosine 200
+  concept_id: 380
+  dosage_form: 
+  date_created: 2007-04-18 10:20:28 +02:00
+  creator: 1
+  therapy_class: 
+  route: 
+  dose_strength: 
+  units: 
+  drug_id: 13
+  combination: true
+  minimum_dose: 
+  daily_mg_per_kg: 
+  inn: 
+  shelf_life: 
+  maximum_dose: 
+drug_0012: 
+  name: Tenofovir 300
+  concept_id: 382
+  dosage_form: 
+  date_created: 2007-04-18 10:20:29 +02:00
+  creator: 1
+  therapy_class: 
+  route: 
+  dose_strength: 
+  units: 
+  drug_id: 14
+  combination: true
+  minimum_dose: 
+  daily_mg_per_kg: 
+  inn: 
+  shelf_life: 
+  maximum_dose: 
+drug_0001: 
+  name: Stavudine 30 Lamivudine 150
+  concept_id: 361
+  dosage_form: ""
+  date_created: 2007-03-11 15:43:00 +01:00
+  creator: 1
+  therapy_class: 
+  route: ""
+  dose_strength: 
+  units: ""
+  drug_id: 1
+  combination: true
+  minimum_dose: 
+  daily_mg_per_kg: 
+  inn: ""
+  shelf_life: 
+  maximum_dose: 
+drug_0002: 
+  name: Stavudine 40 Lamivudine 150
+  concept_id: 361
+  dosage_form: ""
+  date_created: 2007-03-11 15:44:00 +01:00
+  creator: 1
+  therapy_class: 
+  route: ""
+  dose_strength: 
+  units: ""
+  drug_id: 2
+  combination: true
+  minimum_dose: 
+  daily_mg_per_kg: 
+  inn: ""
+  shelf_life: 
+  maximum_dose: 
+drug_0013: 
+  name: Insecticide Treated Net
+  concept_id: 384
+  dosage_form: 
+  date_created: 2007-05-02 11:48:47 +02:00
+  creator: 1
+  therapy_class: 
+  route: 
+  dose_strength: 
+  units: 
+  drug_id: 15
+  combination: true
+  minimum_dose: 
+  daily_mg_per_kg: 
+  inn: 
+  shelf_life: 
+  maximum_dose: 
+drug_0014: 
+  name: Cotrimoxazole 480
+  concept_id: 385
+  dosage_form: 
+  date_created: 2007-05-02 11:48:47 +02:00
+  creator: 1
+  therapy_class: 
+  route: 
+  dose_strength: 
+  units: 
+  drug_id: 16
+  combination: true
+  minimum_dose: 
+  daily_mg_per_kg: 
+  inn: 
+  shelf_life: 
+  maximum_dose: 
+drug_0003: 
+  name: Stavudine 30 Lamivudine 150 Nevirapine 200
+  concept_id: 337
+  dosage_form: 
+  date_created: 2007-04-18 10:20:27 +02:00
+  creator: 1
+  therapy_class: 
+  route: 
+  dose_strength: 
+  units: 
+  drug_id: 5
+  combination: true
+  minimum_dose: 
+  daily_mg_per_kg: 
+  inn: 
+  shelf_life: 
+  maximum_dose: 
+drug_0004: 
+  name: Stavudine 40 Lamivudine 150 Nevirapine 200
+  concept_id: 337
+  dosage_form: 
+  date_created: 2007-04-18 10:20:27 +02:00
+  creator: 1
+  therapy_class: 
+  route: 
+  dose_strength: 
+  units: 
+  drug_id: 6
+  combination: true
+  minimum_dose: 
+  daily_mg_per_kg: 
+  inn: 
+  shelf_life: 
+  maximum_dose: 
+drug_0005: 
+  name: Efavirenz 600
+  concept_id: 376
+  dosage_form: 
+  date_created: 2007-04-18 10:20:27 +02:00
+  creator: 1
+  therapy_class: 
+  route: 
+  dose_strength: 
+  units: 
+  drug_id: 7
+  combination: true
+  minimum_dose: 
+  daily_mg_per_kg: 
+  inn: 
+  shelf_life: 
+  maximum_dose: 
+drug_0006: 
+  name: Zidovudine 300 Lamivudine 150
+  concept_id: 377
+  dosage_form: 
+  date_created: 2007-04-18 10:20:28 +02:00
+  creator: 1
+  therapy_class: 
+  route: 
+  dose_strength: 
+  units: 
+  drug_id: 8
+  combination: true
+  minimum_dose: 
+  daily_mg_per_kg: 
+  inn: 
+  shelf_life: 
+  maximum_dose: 
+drug_0007: 
+  name: Nevirapine 200
+  concept_id: 378
+  dosage_form: 
+  date_created: 2007-04-18 10:20:28 +02:00
+  creator: 1
+  therapy_class: 
+  route: 
+  dose_strength: 
+  units: 
+  drug_id: 9
+  combination: true
+  minimum_dose: 
+  daily_mg_per_kg: 
+  inn: 
+  shelf_life: 
+  maximum_dose: 

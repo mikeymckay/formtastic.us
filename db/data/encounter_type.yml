@@ -1,0 +1,55 @@
+--- 
+encounter_type_0004: 
+  name: HIV Staging
+  date_created: 2006-11-29 08:22:00 +01:00
+  creator: 1
+  encounter_type_id: 5
+  description: ""
+encounter_type_0005: 
+  name: HIV Reception
+  date_created: 2006-12-01 08:25:00 +01:00
+  creator: 1
+  encounter_type_id: 6
+  description: ""
+encounter_type_0006: 
+  name: Height/Weight
+  date_created: 2006-12-01 23:14:00 +01:00
+  creator: 1
+  encounter_type_id: 7
+  description: ""
+encounter_type_0007: 
+  name: Barcode scan
+  date_created: 2007-01-26 08:45:04 +01:00
+  creator: 1
+  encounter_type_id: 13
+  description: ""
+encounter_type_0008: 
+  name: Update outcome
+  date_created: 2007-05-15 10:33:13 +02:00
+  creator: 1
+  encounter_type_id: 14
+  description: ""
+encounter_type_0009: 
+  name: TB Reception
+  date_created: 2007-06-10 22:58:26 +02:00
+  creator: 1
+  encounter_type_id: 15
+  description: ""
+encounter_type_0001: 
+  name: HIV First visit
+  date_created: 2006-10-19 14:30:00 +02:00
+  creator: 1
+  encounter_type_id: 1
+  description: ""
+encounter_type_0002: 
+  name: ART Visit
+  date_created: 2006-10-19 14:31:00 +02:00
+  creator: 1
+  encounter_type_id: 2
+  description: ""
+encounter_type_0003: 
+  name: Give drugs
+  date_created: 2006-11-03 09:12:00 +01:00
+  creator: 1
+  encounter_type_id: 3
+  description: ""

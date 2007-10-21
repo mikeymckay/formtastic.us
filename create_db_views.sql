@@ -1,5 +1,3 @@
-; YO!
-
 DROP VIEW IF EXISTS forms;
 CREATE VIEW forms (id, name, version, build, published, description, encounter_type, schema_namespace, template, infopath_solution_version, uri, xslt, creator, date_created, changed_by, date_changed, retired, retired_by, date_retired, retired_reason) AS SELECT * FROM form;
 

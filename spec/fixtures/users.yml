@@ -1,0 +1,13 @@
+clinician: 
+  user_id: 1
+  username: clinician
+  first_name: Senor
+  last_name: Clinician
+  creator: 1
+  date_created: 2006-11-30 15:51:47
+  changed_by: 1
+  date_changed: 2006-11-30 15:51:47
+  voided: 0
+  voided_by: 
+  void_reason: ""
+  date_voided: 

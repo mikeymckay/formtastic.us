@@ -2,12 +2,11 @@ require File.dirname(__FILE__) + '/../../spec_helper'
 
 describe "/forms/" do
   before(:each) do
-    @vitals = mock_model(Form)
+    @height_weight = mock_model(Form)
     @reception = mock_model(Form)
-    @vitals.stub!(:name).and_return("Height/Weight")
+    @height_weight.stub!(:name).and_return("Height/Weight")
     @reception.stub!(:name).and_return("HIV Reception")
-    assigns[:forms] = [ @vitals, @reception]
-
+    assigns[:forms] = [ @height_weight, @reception]
   end
 
   it "should display the list of forms with a link to show, edit and delete each one" do
@@ -19,28 +18,32 @@ describe "/forms/" do
   end
 end
 
-describe "editing of a form" do
+describe "editing a form" do
   before(:each) do
-    @vitals = mock_model(Form)
-    @vitals.stub!(:name).and_return("ART Vitals")
-    assigns[:form] = @vitals
-    @weight_form_field = mock_model(FormField)
+    @height_weight = mock_model(Form)
+    assigns[:form] = @height_weight
+    @height_weight.stub!(:name).and_return("Height/Weight")
+
     @weight_field = mock_model(Field)
     @weight_field.stub!(:type).and_return("Number")
     @weight_field.stub!(:name).and_return("Weight")
-    @weight_form_field.stub!(:field).and_return(@weight_field)
+
+    @weight_form_field = mock_model(FormField)
     assigns[:form_fields] = [@weight_form_field]
+    @weight_form_field.stub!(:field).and_return(@weight_field)
+
+    @min = mock_model(FieldAttribute)
+    @min.stub!(:name).and_return("Min")
+    @weight_form_field.stub!(:field_attributes).and_return([@min])
+
   end
 
   it "should display the form's name" do
     render "/forms/edit"
-    response.should have_tag('h1', "ART Vitals")
+    response.should have_tag('h1', "Height/Weight")
   end
 
   it "should display the field type and names in the form" do
-    @min = mock_model(FieldAttribute)
-    @min.stub!(:name).and_return("Min")
-    assigns[:field_attributes] = [@min]
     render "/forms/edit"
 
     response.should have_tag('li.fields') do

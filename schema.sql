@@ -1,6 +1,6 @@
 -- MySQL dump 10.11
 --
--- Host: localhost    Database: formtastic_test
+-- Host: localhost    Database: openmrs_development
 -- ------------------------------------------------------
 -- Server version	5.0.38-Ubuntu_0ubuntu1-log
 
@@ -1044,6 +1044,22 @@ CREATE TABLE `orders` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
+-- Table structure for table `paper_mastercards`
+--
+
+DROP TABLE IF EXISTS `paper_mastercards`;
+CREATE TABLE `paper_mastercards` (
+  `id` int(11) NOT NULL auto_increment,
+  `arvnumber` varchar(50) NOT NULL,
+  `fieldid` varchar(100) NOT NULL,
+  `fieldvalue` varchar(100) NOT NULL,
+  `entry` char(1) NOT NULL,
+  `mastercard_number` int(2) default NULL,
+  `username` varchar(20) default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=415311 DEFAULT CHARSET=latin1;
+
+--
 -- Table structure for table `patient`
 --
 
@@ -1697,4 +1713,4 @@ CREATE TABLE `users` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2007-10-22 12:57:21
+-- Dump completed on 2007-10-22 14:30:17

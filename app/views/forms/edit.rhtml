@@ -12,13 +12,9 @@
     <% else %>
       <span class="type"><%= field.type %></span>
       <select class="add_attribute">
-        <% @field_attributes.each do |field_attribute| %>
+        <% form_field.field_attributes.each do |field_attribute| %>
           <option><%= field_attribute.name %></option>
-
         <% end %>
-
-        <option>
-
       </select>
     <%end%>
   </li>

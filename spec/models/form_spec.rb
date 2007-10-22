@@ -15,11 +15,4 @@ describe Form do
     @form.should be_valid
   end
 
-  it "should be able to take form_fields" do
-    puts FormField.find(1)
-    form_fields = [form_fields(:first_name), form_fields(:weight)] 
-    @form.form_fields = form_fields
-    @form.form_fields.should == form_fields
-  end
-
 end

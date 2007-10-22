@@ -2,7 +2,7 @@
 # migrations feature of ActiveRecord to incrementally modify your database, and
 # then regenerate this schema definition.
 
-ActiveRecord::Schema.define(:version => 1) do
+ActiveRecord::Schema.define() do
 
   create_table "complex_obs", :id => false, :force => true do |t|
     t.column "obs_id",        :integer, :default => 0, :null => false
@@ -308,6 +308,18 @@ ActiveRecord::Schema.define(:version => 1) do
   add_index "field_answer", ["answer_id"], :name => "field_answer_concept"
   add_index "field_answer", ["creator"], :name => "user_who_created_field_answer"
 
+  create_table "field_attribute", :force => true do |t|
+    t.column "field_id",                :integer
+    t.column "form_field_id",           :integer
+    t.column "field_attribute_type_id", :integer, :null => false
+    t.column "value",                   :string
+  end
+
+  create_table "field_attribute_types", :force => true do |t|
+    t.column "name",        :string, :default => "", :null => false
+    t.column "description", :string
+  end
+
   create_table "field_type", :id => false, :force => true do |t|
     t.column "field_type_id", :integer,                                   :null => false
     t.column "name",          :string,   :limit => 50
@@ -318,6 +330,29 @@ ActiveRecord::Schema.define(:version => 1) do
   end
 
   add_index "field_type", ["creator"], :name => "user_who_created_field_type"
+
+  create_table "field_types", :force => true do |t|
+    t.column "name",         :string,   :limit => 50
+    t.column "description",  :text
+    t.column "is_set",       :boolean,                :default => false, :null => false
+    t.column "creator",      :integer,                :default => 0,     :null => false
+    t.column "date_created", :datetime,                                  :null => false
+  end
+
+  create_table "fields", :force => true do |t|
+    t.column "name",            :string,                 :default => "",    :null => false
+    t.column "description",     :text
+    t.column "field_type",      :integer
+    t.column "concept_id",      :integer
+    t.column "table_name",      :string,   :limit => 50
+    t.column "attribute_name",  :string,   :limit => 50
+    t.column "default_value",   :text
+    t.column "select_multiple", :boolean,                :default => false, :null => false
+    t.column "creator",         :integer,                :default => 0,     :null => false
+    t.column "date_created",    :datetime,                                  :null => false
+    t.column "changed_by",      :integer
+    t.column "date_changed",    :datetime
+  end
 
   create_table "form", :id => false, :force => true do |t|
     t.column "form_id",                   :integer,                                   :null => false
@@ -370,6 +405,22 @@ ActiveRecord::Schema.define(:version => 1) do
   add_index "form_field", ["parent_form_field"], :name => "form_field_hierarchy"
   add_index "form_field", ["creator"], :name => "user_who_created_form_field"
 
+  create_table "form_fields", :force => true do |t|
+    t.column "form_id",           :integer,               :default => 0, :null => false
+    t.column "field_id",          :integer,               :default => 0, :null => false
+    t.column "field_number",      :integer
+    t.column "field_part",        :string,   :limit => 5
+    t.column "page_number",       :integer
+    t.column "parent_form_field", :integer
+    t.column "min_occurs",        :integer
+    t.column "max_occurs",        :integer
+    t.column "required",          :boolean
+    t.column "changed_by",        :integer
+    t.column "date_changed",      :datetime
+    t.column "creator",           :integer,               :default => 0, :null => false
+    t.column "date_created",      :datetime,                             :null => false
+  end
+
   create_table "formentry_archive", :id => false, :force => true do |t|
     t.column "formentry_archive_id", :integer,                  :null => false
     t.column "form_data",            :text,     :default => "", :null => false
@@ -400,9 +451,40 @@ ActiveRecord::Schema.define(:version => 1) do
     t.column "date_created",       :datetime,                 :null => false
   end
 
+  create_table "forms", :force => true do |t|
+    t.column "name",                      :string,                 :default => "",    :null => false
+    t.column "version",                   :string,   :limit => 50, :default => "",    :null => false
+    t.column "build",                     :integer
+    t.column "published",                 :integer,  :limit => 4,  :default => 0,     :null => false
+    t.column "description",               :text
+    t.column "encounter_type",            :integer
+    t.column "schema_namespace",          :string
+    t.column "template",                  :text
+    t.column "infopath_solution_version", :string,   :limit => 50
+    t.column "uri",                       :string
+    t.column "xslt",                      :text
+    t.column "creator",                   :integer,                :default => 0,     :null => false
+    t.column "date_created",              :datetime,                                  :null => false
+    t.column "changed_by",                :integer
+    t.column "date_changed",              :datetime
+    t.column "retired",                   :boolean,                :default => false, :null => false
+    t.column "retired_by",                :integer
+    t.column "date_retired",              :datetime
+    t.column "retired_reason",            :string
+  end
+
   create_table "global_property", :force => true do |t|
     t.column "property",       :string
     t.column "property_value", :string
+  end
+
+  create_table "heart_beat", :force => true do |t|
+    t.column "ip",         :string,   :limit => 20
+    t.column "property",   :string,   :limit => 200
+    t.column "value",      :string,   :limit => 200
+    t.column "time_stamp", :datetime
+    t.column "username",   :string,   :limit => 10
+    t.column "url",        :string,   :limit => 100
   end
 
   create_table "hl7_in_archive", :id => false, :force => true do |t|

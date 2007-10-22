@@ -1,8 +1,8 @@
 first_name:
-  form_field_id: 1
+  id: 1
   form_id: 1
   field_id: 1
 weight:
-  form_field_id: 2
+  id: 2
   form_id: 1
   field_id: 2

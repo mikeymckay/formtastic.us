@@ -36,6 +36,8 @@ describe "editing a form" do
     @min.stub!(:name).and_return("Min")
     @weight_form_field.stub!(:field_attributes).and_return([@min])
 
+    assigns[:available_fields] = [@weight_field]
+
   end
 
   it "should display the form's name" do
@@ -52,6 +54,13 @@ describe "editing a form" do
        with_tag("select.add_attribute") do
         with_tag("option", "Min")
        end
+    end
+  end
+
+  it "should have a drop down to add new fields to the form" do
+    render "/forms/edit"
+    response.should have_tag('select.add_field') do
+      with_tag("option", "Weight")
     end
   end
 end

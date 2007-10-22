@@ -30,6 +30,7 @@ class FormsController < ApplicationController
   def edit
     @form = Form.find(params[:id])
     @form_fields = @form.form_fields.sort_by{|form_field| form_field.field_number}.collect{|form_field| form_field.field}
+    @available_fields = ["Height"]
   end
 
   # POST /forms

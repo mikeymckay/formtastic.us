@@ -1,4 +1,27 @@
-DEFAULT_FIXTURES = 'global_property,privilege,role,role_privilege,role_role,users,user_role,encounter_type,relationship_type,order_type,patient_identifier_type,field_type,location,program,concept_answer,concept_class,concept_set,concept,drug,drug_barcodes,field,form_field,form'
+
+DEFAULT_FIXTURES = ['global_property',
+                    'privilege',
+                    'role',
+                    'role_privilege',
+                    'role_role',
+                    'users',
+                    'user_role',
+                    'encounter_type',
+                    'relationship_type',
+                    'order_type',
+                    'patient_identifier_type',
+                    'field_type',
+                    'location',
+                    'program',
+                    'concept_answer',
+                    'concept_class',
+                    'concept_set',
+                    'concept',
+                    'drug',
+                    'drug_barcodes',
+                    'field',
+                    'form_field',
+                    'form']
 
 namespace :db do
   namespace :bootstrap do
@@ -19,48 +42,42 @@ namespace :db do
       desc "Load initial default database records (in db/data/*.yml) into the current environment's database." 
       task :defaults => :environment do      
         ENV['KEYS'] = 'disabled'
-        ENV['FIXTURES'] = DEFAULT_FIXTURES
+        ENV['FIXTURES'] = DEFAULT_FIXTURES.join(',')
         Rake::Task["db:bootstrap:load"].execute
       end
     end
     
-    desc "Create fixtures in db/data that can be used to initialize the database. Dump specific tables or models using TABLES=x,y or MODELS=x,y"    
+    desc "Create fixtures in db/data that can be used to initialize the database. Dump specific models using MODELS=x,y"    
     task :dump => :environment do
       ActiveRecord::Base.establish_connection(RAILS_ENV.to_sym)
-      unless ENV['TABLES'].blank?
-        sql  = "SELECT * FROM %s"
-        tables = (ENV['TABLES'] ? ENV['TABLES'].split(/,/) : ActiveRecord::Base.connection.tables) - ["schema_info"]
-        tables.each {|table|
-          i = "0000"
-          data = ActiveRecord::Base.connection.select_all(sql % table)        
-          File.open("#{RAILS_ROOT}/db/data/#{table}.yml", 'w') do |file|
-            file.write data.inject({}) {|hash,r| hash.merge("#{table}_#{i.succ!}" => r) }.to_yaml         
+FIXTURE_CLASS = {   
+                }
+                   
+
+      tables = (ENV['MODELS'] ? ENV['MODELS'].split(/,/) : ActiveRecord::Base.connection.tables) - ["schema_info"]
+      tables.each {|table|            
+        i = "0000"
+        model = FIXTURE_CLASS[table] || table.pluralize.classify.constantize
+        data = model.find(:all)       
+        data.each {|r| 
+          if ENV['CREATOR'] == 'reset'
+            r.creator = 1 if r.has_attribute?('creator') 
+            r.changed_by = 1 if r.has_attribute?('changed_by')
+            r.updated_by = 1 if r.has_attribute?('updated_by')
           end  
         }
-      else
-        tables = (ENV['MODELS'] ? ENV['MODELS'].split(/,/) : ActiveRecord::Base.connection.tables) - ["schema_info"]
-        tables.each {|table|            
-          if (model = table.pluralize.classify.constantize)
-            i = "0000"
-            data = model.find(:all)       
-            data.each {|r| r.creator = 1 if r.has_attribute?('creator') && ENV['CREATOR'] == 'reset' }
-            data.each {|r| r.changed_by = 1 if r.has_attribute?('changed_by') && ENV['CREATOR'] == 'reset' }
-            File.open("#{RAILS_ROOT}/db/data/#{table}.yml", 'w') do |file|
-              file.write data.inject({}) {|hash,r| 
-                hash.merge("#{table}_#{i.succ!}" => r.attributes) 
-              }.to_yaml         
-            end  
-          else
-            puts "Unknown model '#{table}'"
-          end
-        }
-      end
+        File.open("#{RAILS_ROOT}/db/data/#{table}.yml", 'w') do |file|
+          file.write data.inject({}) {|hash,r| 
+            hash.merge("#{table}_#{i.succ!}" => r.attributes) 
+          }.to_yaml         
+        end  
+      }
     end
 
     namespace :dump do
       desc "Create a default set of fixtures in db/data that can be portably used to initialize the database."    
       task :defaults => :environment do      
-        ENV['MODELS'] = DEFAULT_FIXTURES
+        ENV['MODELS'] = DEFAULT_FIXTURES.join(',')
         ENV['CREATOR'] = 'reset'
         Rake::Task["db:bootstrap:dump"].execute
       end

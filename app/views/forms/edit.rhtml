@@ -16,6 +16,11 @@
           <option><%= field_attribute.name %></option>
         <% end %>
       </select>
+      <select class="add_field">
+        <% @available_fields.each do |field| %>
+          <option><%= field.name %></option>
+        <% end %>
+      </select>
     <%end%>
   </li>
 <% end %>

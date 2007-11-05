@@ -1,0 +1,17 @@
+<h1>Editing field</h1>
+
+<%= error_messages_for :field %>
+
+<% form_for(:field, :url => field_path(@field), :html => { :method => :put }) do |f| %>
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= submit_tag "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', field_path(@field) %> |
+<%= link_to 'Back', fields_path %>

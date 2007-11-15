@@ -1,22 +1,15 @@
   <li class="fields" id="item_<%=form_field.id%>">
-  <%=form_field.id%>
-
   <% field = form_field.field %>
     <span class="name"><%= field.name %></span>
 
     <%if field.type == "select" or field.type == "multi_select" %>
       <%= field.concept.answer_options.collect{|concept|concept.name}.join ":" %>
     <% else %>
-      <span class="type"><%= field.type %></span>
-      <select class="add_attribute">
-        <% form_field.field_attributes.each do |field_attribute| %>
-          <option><%= field_attribute.name %></option>
-        <% end %>
-      </select>
-      <% form_remote_tag :url => field_attributes_path(form_field) do %>
-        <%= text_field :field_attribute, :value %>
-        <%= collection_select :field_attribute, :field_attribute_type_id, FieldAttributeType.find(:all), :id, :name  %>
-        <%= submit_tag "Add field attribute" %>
+      <ul id="form_field_attributes[<%= form_field.id %>]">
+      <% form_field.field_attributes.each do |field_attribute| %>
+        <%= render :partial => 'forms/field_attribute', :locals => {:field_attribute => field_attribute} %>
       <% end %>
+      </ul>
+      <%= render :partial => 'forms/field_attribute_form', :locals => {:form_field => form_field} %>
     <%end%>
   </li>

@@ -1,0 +1,4 @@
+page.insert_html :bottom, "form_field_attributes[#{@field_attribute.form_field_id}]", {:partial => 'forms/field_attribute', :locals => {:field_attribute => @field_attribute}}
+page.replace_html "form_field_attributes_form[#{@field_attribute.form_field_id}]", {:partial => 'forms/field_attribute_form', :locals => {:form_field => @field_attribute.form_field}}
+page.visual_effect :highlight, "form_field_attributes[#{@field_attribute.form_field_id}]"
+page.visual_effect :highlight, "form_field_attributes_form[#{@field_attribute.form_field_id}]"

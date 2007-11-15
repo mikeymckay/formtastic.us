@@ -1,0 +1,18 @@
+<h1>Listing field attribute types</h1>
+
+<table>
+  <tr>
+  </tr>
+  
+<% for field_attribute_type in @field_attribute_types %>
+  <tr>
+    <td><%= link_to field_attribute_type.name, field_attribute_type_url(field_attribute_type) %></td>
+    <td><%= link_to 'Edit', edit_field_attribute_type_path(field_attribute_type) %></td>
+    <td><%= link_to 'Destroy', field_attribute_type_path(field_attribute_type), :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New field attribute type', new_field_attribute_type_path %>

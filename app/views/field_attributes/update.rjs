@@ -1,0 +1,4 @@
+page.replace_html "field_attribute_value[#{@field_attribute.id}]", {:partial => 'forms/field_attribute_value', :locals => {:field_attribute => @field_attribute}}
+page.visual_effect :highlight, "field_attribute_value[#{@field_attribute.id}]"
+page.visual_effect :fade, "update_value[#{@field_attribute.id}]"
+page.alert("Value updated")

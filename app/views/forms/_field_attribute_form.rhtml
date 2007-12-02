@@ -1,4 +1,4 @@
-<% available_attributes = FieldAttributeType.find(:all) - form_field.field_attributes.map(&:field_attribute_type) %>
+<% available_attributes = FieldAttributeType.find(:all) - form_field.field_attributes.map(&:field_attribute_type).sort{|a,b| a.name <=> b.name} %>
 <% unless available_attributes.empty? %>
   <%= form_remote_tag :url => field_attributes_path(:form_id =>form_field.form, :form_field_id => form_field), :html => {:id => "form_field_attributes_form[#{form_field.id}]"} %>
   <%= text_field :field_attribute, :value %>

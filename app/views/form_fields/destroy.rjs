@@ -1,0 +1,1 @@
+page.visual_effect :fade, "item_#{@form_field.id}"

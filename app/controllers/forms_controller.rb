@@ -29,11 +29,6 @@ class FormsController < ApplicationController
   # GET /forms/1;edit
   def edit
     @form = Form.find(params[:id])
-    begin
-    @form_fields = @form.form_fields.sort_by{|form_field| form_field.field_number}
-    rescue
-    @form_fields = @form.form_fields
-    end
   end
 
   # POST /forms
@@ -57,17 +52,7 @@ class FormsController < ApplicationController
   # PUT /forms/1.xml
   def update
     @form = Form.find(params[:id])
-
-    respond_to do |format|
-      if @form.update_attributes(params[:form])
-        flash[:notice] = 'Form was successfully updated.'
-        format.html { redirect_to form_url(@form) }
-        format.xml  { head :ok }
-      else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @form.errors.to_xml }
-      end
-    end
+    @form.update_attributes(params[:form])
   end
 
   # DELETE /forms/1

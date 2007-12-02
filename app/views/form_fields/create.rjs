@@ -1,1 +1,2 @@
 page.insert_html :bottom, 'form_fields', {:partial => 'forms/form_field', :locals => {:form_field => @form_field}}
+page.visual_effect :highlight, "form_fields"

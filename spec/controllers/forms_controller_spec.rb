@@ -30,7 +30,6 @@ describe FormsController do
   it "should find the right form and form_fields on GET to edit" do
     @form_fields = mock("form_fields")
     @form_fields.should_receive(:sort_by).and_return(@form_fields)
-    @form_fields.should_receive(:collect).and_return(@form_fields)
     @form.should_receive(:form_fields).and_return(@form_fields)
     get 'edit'
     assigns[:form].should equal(@form)

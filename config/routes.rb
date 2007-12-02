@@ -1,5 +1,13 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :forms
+  map.resources :fields
+
+  map.resources :forms do |form|
+    form.resources :form_fields do |form_field|
+      form_field.resources :field_attributes
+    end
+  end
+
+  map.resources :field_attribute_types
 
   # The priority is based upon order of creation: first created -> highest priority.
   
@@ -22,4 +30,5 @@ ActionController::Routing::Routes.draw do |map|
   # Install the default route as the lowest priority.
   map.connect ':controller/:action/:id.:format'
   map.connect ':controller/:action/:id'
+  map.connect '', :controller => "forms"
 end

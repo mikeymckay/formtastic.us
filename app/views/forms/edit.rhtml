@@ -1,35 +1,42 @@
-<h1><%= @form.name %></h1>
-
 <%= error_messages_for :form %>
 
-<% @form_fields.each do |form_field|  %>
-  <li class="fields" id="item_<%=form_field.id%>">
-  <% field = form_field.field %>
-    <span class="name"><%= field.name %></span>
+<style>
+#form_name{
+  font-size:2em;
+  border: none;
+}
+.field_attribute_value{
+  border: none;
+}
+</style>
 
-    <%if field.type == "select" or field.type == "multi_select" %>
-      <%= field.concept.answer_options.collect{|concept|concept.name}.join ":" %>
-    <% else %>
-      <span class="type"><%= field.type %></span>
-      <select class="add_attribute">
-        <% form_field.field_attributes.each do |field_attribute| %>
-          <option><%= field_attribute.name %></option>
-        <% end %>
-      </select>
-      <select class="add_field">
-        <% @available_fields.each do |field| %>
-          <option><%= field.name %></option>
-        <% end %>
-      </select>
-    <%end%>
-  </li>
-<% end %>
-
-<% form_for(:form, :url => form_path(@form), :html => { :method => :put }) do |f| %>
+<% form_remote_for(:form, :url => form_path(@form), :html => { :method => :put }) do |f| %>
   <p>
-    <%= submit_tag "Update" %>
+    <%= f.text_field :name, :onclick => "new Effect.Appear('update_name',{})", :size => 15 %>
+    <%= submit_tag "Update name", :id=> "update_name", :style => "display: none" %>
   </p>
 <% end %>
+
+
+<ul id="form_fields">
+<% @form.form_fields_sorted.each do |form_field| %>
+  <%= render :partial => "form_field", :locals => {:form_field => form_field}  %>
+<% end %>
+</ul>
+<%= sortable_element "form_fields", 
+    :url => {:controller=> "form_fields", :action => "update"},
+    :complete => visual_effect(:highlight, 'form_fields')
+%>
+
+<% form_remote_tag :url => form_fields_path(@form) do %>
+  <%= collection_select :field, :id, Field.find(:all), :id, :name  %>
+  <%= submit_tag "Add field" %>
+<% end %>
+
+
+
+<span id="blah"></span>
+
 
 <%= link_to 'Show', form_path(@form) %> |
 <%= link_to 'Back', forms_path %>

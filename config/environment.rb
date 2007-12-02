@@ -61,3 +61,10 @@ end
 
 
   ActiveRecord::Base.connection.execute("SET FOREIGN_KEY_CHECKS=0")
+
+def yell(msg) 
+  # stupid simple logging:
+  f = File.open(File.expand_path(File.dirname(__FILE__) + "/../log/yell.log"),"a") 
+  f.puts msg 
+  f.close
+end

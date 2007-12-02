@@ -1,4 +1,3 @@
-<%# form_remote_for(:field_attribute, field_attribute, :url => field_attribute_path(:id => field_attribute.id, :form_id => field_attribute.form_field.form_id, :form_field_id => field_attribute.form_field_id), :html => { :method => :put, :class => "field_attribute_value_form", :style => "display:inline" }) do |f| %>
 <% form_remote_for(:field_attribute, field_attribute, :url => field_attribute_path(:id => field_attribute.id, :form_id => field_attribute.form_field.form_id, :form_field_id => field_attribute.form_field_id), :html => { :class => "field_attribute_value_form", :style => "display:inline" }) do |f| %>
     <%= hidden_field_tag :_method,  "put" %>
     <%= f.text_field :value, :onclick => "new Effect.Appear('update_value[#{field_attribute.id}]',{})", :size => 15, :id => "field_attribute_value[#{field_attribute.id}]", :class => "field_attribute_value" %>

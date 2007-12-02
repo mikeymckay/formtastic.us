@@ -1,4 +1,7 @@
 class Location < ActiveRecord::Base
+
+  cattr_accessor :current_location
+
   belongs_to :creator, :class_name => 'User', :foreign_key => :creator
   belongs_to :location, :class_name => 'Location', :foreign_key => :location_id
   has_many :encounters, :class_name => 'Encounter', :foreign_key => :location_id

@@ -18,7 +18,19 @@ describe "/forms/" do
   end
 end
 
+describe "getting a form" do
+  it "should have all data required to save the encounter and observations on the form post"
+
+  # observation["id"][":value_coded"]
+  # encounter["encounter_type"]
+  # encounter["provider"]
+  #
+
+end
+
+
 describe "editing a form" do
+  fixtures :fields
   before(:each) do
     @height_weight = mock_model(Form)
     assigns[:form] = @height_weight
@@ -36,7 +48,7 @@ describe "editing a form" do
     @min.stub!(:name).and_return("Min")
     @weight_form_field.stub!(:field_attributes).and_return([@min])
 
-    assigns[:available_fields] = [@weight_field]
+    assigns[:available_fields] = [fields(:first_name),fields(:weight)]
   end
 
   it "should display the form's name" do
@@ -56,19 +68,27 @@ describe "editing a form" do
     end
   end
 
-  it "should have a drop down to add new fields to the form" do
+  it "should have a drop down to add new fields to the form at the bottom of the field list" do
     render "/forms/edit"
-    response.should have_tag('select.add_field') do
+# Not sure how to force it be at bottom of page
+    response.should have_tag('select') do
+      with_tag("option", "First name")
       with_tag("option", "Weight")
     end
   end
 
-  it "should have use field objects, not strings in the select" do
-    assigns[:available_fields] = ["Height"]
-    render "/forms/edit"
-    response.should have_tag('select.add_field') do
-      with_tag("option", "Weight")
-    end
+  it "should add a field to the form after selecting one from the drop down, and clicking the button" do
+#    render "/forms/edit"
+#    response.should have_tag('select.add_field') do
+#      with_tag("option", "First name")
+#      with_tag("option", "Weight")
+#    end
   end
+
+  it "should be able to show all fields"
+  it "should be able to reorder fields"
+  it "should add attributes to fields"
+  it "should show attributes for fields"
+
 
 end

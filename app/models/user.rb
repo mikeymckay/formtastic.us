@@ -1,5 +1,8 @@
 class User < ActiveRecord::Base
   set_primary_key "user_id"
+
+  cattr_accessor :current_user
+
   belongs_to :creator, :class_name => 'User', :foreign_key => :creator
   belongs_to :changed_by, :class_name => 'User', :foreign_key => :changed_by
   belongs_to :voided_by, :class_name => 'User', :foreign_key => :voided_by

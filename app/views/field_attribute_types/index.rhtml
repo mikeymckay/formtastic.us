@@ -1,12 +1,20 @@
 <h1>Listing field attribute types</h1>
 
+<style> 
+  tr.dark{
+    background-color: lightgrey
+  }
+
+</style>
+
 <table>
   <tr>
   </tr>
-  
-<% for field_attribute_type in @field_attribute_types %>
-  <tr>
+<% i=0 %>
+<% for field_attribute_type in @field_attribute_types.sort{|a,b| a.name <=> b.name} %>
+  <tr class="<%= (i+=1)%2==0 ? "dark" : "light"%>">
     <td><%= link_to field_attribute_type.name, field_attribute_type_url(field_attribute_type) %></td>
+    <td><%= field_attribute_type.description %></td>
     <td><%= link_to 'Edit', edit_field_attribute_type_path(field_attribute_type) %></td>
     <td><%= link_to 'Destroy', field_attribute_type_path(field_attribute_type), :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>

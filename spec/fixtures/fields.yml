@@ -1,12 +1,12 @@
 first_name:
-  field_id: 1
-  name: first_name
+  id: 1
+  name: First name
   creator: 1
   date_created: 2006-11-30 15:51:47
   select_multiple: 0
 weight:
-  field_id: 2
-  name: weight
+  id: 2
+  name: Weight
   creator: 1
   date_created: 2006-11-30 15:51:47
   select_multiple: 0

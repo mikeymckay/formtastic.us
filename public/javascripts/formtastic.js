@@ -61,14 +61,15 @@ function observeForValidity(){
   reasonableMax = this.readAttribute('reasonableMax')
   absoluteMin = this.readAttribute('absoluteMin')
   absoluteMax = this.readAttribute('absoluteMax')
-  if( (absoluteMin != null && this.value < absoluteMin) || (absoluteMax != null && this.value > absoluteMax) ){
+  currentValue = parseFloat(this.value)
+  if( (absoluteMin != null && currentValue < absoluteMin) || (absoluteMax != null && currentValue > absoluteMax) ){
     pauseAndFocus(this)
     message = $('message_'+this.identify());
     message.innerHTML = "Data is not in valid range: " + absoluteMin + "-" + absoluteMax 
     new Effect.Appear(message)
     new Effect.Highlight(this, {startcolor:'#ff0000', endcolor:'#ffffff', restorecolor: "#ffffff", duration: 5})
     new Effect.Fade(message, {delay: 5})
-  } else if( (reasonableMin != null && this.value < reasonableMin) || (reasonableMax != null && this.value > reasonableMax) ){
+  } else if( (reasonableMin != null && currentValue < reasonableMin) || (reasonableMax != null && currentValue > reasonableMax) ){
     message = $('message_'+this.identify());
     message.innerHTML = "Data is not in reasonable range: " + reasonableMin + "-" + reasonableMax 
     new Effect.Appear(message)

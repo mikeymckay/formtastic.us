@@ -7,6 +7,7 @@ ActionController::Routing::Routes.draw do |map|
     end
   end
 
+
   map.resources :field_attribute_types
 
   # The priority is based upon order of creation: first created -> highest priority.

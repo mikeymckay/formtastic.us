@@ -10,13 +10,35 @@
 }
 </style>
 
-<% form_remote_for(:form, :url => form_path(@form), :html => { :method => :put }) do |f| %>
-  <p>
-    <%= f.text_field :name, :onclick => "new Effect.Appear('update_name',{})", :size => 15 %>
-    <%= submit_tag "Update name", :id=> "update_name", :style => "display: none" %>
+<% form_remote_for(:form, :url => form_path(@form), :success => visual_effect(:highlight, 'form_form') ,:html => { :id => "form_form" , :method => :put }) do |f| %>
+  <p onclick="new Effect.Appear('update_form', {})">
+    <%= f.text_field :name, :onclick => "new Effect.Appear('update_form',{})", :size => 15 %>
+    <%= radio_button_tag :user_interface_plugins, "formtastic", false, :onclick => "update_user_interface_plugins()"%>Formtastic
+    <%= radio_button_tag :user_interface_plugins, "touchscreenToolkit", false, :onclick => "update_user_interface_plugins()" %>Touchscreen Toolkit
+    <%= radio_button_tag :user_interface_plugins, "other", false, :onclick => "update_user_interface_plugins()" %>Other
+    <%= f.text_field :description, :onclick => "new Effect.Appear('update_form',{})", :size => 25, :style => "display:none" %>
+    <%= submit_tag "Update", :id=> "update_form", :style => "display: none" %>
   </p>
 <% end %>
 
+<script>
+  function update_user_interface_plugins(){
+    // Remove all unchecked options from description
+    $('form_form').getInputs('radio', 'user_interface_plugins').each(function(item){
+      $('form_description').value = $('form_description').value.replace("load_stylesheet: " + item.value + ".css;","")
+      $('form_description').value = $('form_description').value.replace("load_javascript: " + item.value + ".js;","")
+    })
+    selected_ui = $('form_form').getInputs('radio', 'user_interface_plugins').find(function(item){return item.checked})
+    if (selected_ui.value != "other"){
+      $('form_description').value += "load_stylesheet: " + selected_ui.value + ".css;"
+      $('form_description').value += "load_javascript: " + selected_ui.value + ".js;"
+      $('form_description').style.display = "none"
+    }
+    else{
+      $('form_description').style.display = "inline"
+    }
+  }
+</script>
 
 <ul id="form_fields">
 <% @form.form_fields_sorted.each do |form_field| %>

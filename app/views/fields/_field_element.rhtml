@@ -5,21 +5,22 @@
   attributes.each{|attribute,value|
     attributes[attribute] = eval($1) if value.match(/RUBY:(.*)/) rescue raise "Could not execute '#{$1}': #{$!}"
   }
+  field_name = "observation[#{form_field.field_number}][#{form_field.field_attributes["value_type"] || "value_text" }]"
 %>
 
-  <label for="observation[<%= form_field.field_number %>]"><%= form_field.field_attributes["helpText"] || form_field.name %></label>
+  <label for="<%=field_name%>"><%= form_field.field_attributes["helpText"] || form_field.name %></label>
   <%= hidden_field_tag "observation[#{form_field.field_number}][concept_id]", (form_field.field.concept.id rescue nil) %>
 
   <%= 
 # Handle options
   options = attributes["options"]
   if options.blank?
-    text_field_tag "observation[#{form_field.field_number}][#{form_field.field_attributes["value_type"] || "value_text" }]",nil, attributes
+    text_field_tag field_name,nil, attributes
   else 
     unless options.match("<option")
       options = "<option>#{options.split(/, */).join('</option><option>')}</option>"
     end
-    select_tag "observation[#{form_field.field_number}][#{form_field.field_attributes["value_type"] || "value_text" }]",options, attributes
+    select_tag field_name,options, attributes
   end 
   %>
 </div>

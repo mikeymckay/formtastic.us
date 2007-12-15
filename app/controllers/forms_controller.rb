@@ -53,6 +53,7 @@ class FormsController < ApplicationController
   def update
     @form = Form.find(params[:id])
     @form.update_attributes(params[:form])
+    render :text => "#{@form.name} updated"
   end
 
   # DELETE /forms/1

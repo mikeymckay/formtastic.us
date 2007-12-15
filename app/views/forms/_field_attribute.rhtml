@@ -1,4 +1,8 @@
 <li>
-<%= field_attribute.name %>:
-<%= render :partial => 'forms/field_attribute_value', :locals => {:field_attribute => field_attribute} %>
+  <% field_attribute_element_id = "field_attribute_#{field_attribute.id}" %>
+  <span id="<%=field_attribute_element_id%>"><%= field_attribute.name %>:</span>
+  <%= render :partial => 'forms/field_attribute_value', :locals => {:field_attribute => field_attribute} %>
+  <script>
+    new Tip("<%= field_attribute_element_id %>", "<%= escape_javascript(field_attribute.field_attribute_type.description) %>", {title: "<%= field_attribute.name%>"  , hook: {target: 'bottomLeft', tip: 'topLeft'}})
+  </script>
 </li>

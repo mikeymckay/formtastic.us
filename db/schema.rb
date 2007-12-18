@@ -539,10 +539,10 @@ ActiveRecord::Schema.define() do
   add_index "notification_alert", ["changed_by"], :name => "user_who_changed_alert"
 
   create_table "notification_alert_recipient", :id => false, :force => true do |t|
-    t.column "alert_id",     :integer,                              :null => false
-    t.column "user_id",      :integer,                              :null => false
-    t.column "alert_read",   :integer,  :limit => 1, :default => 0, :null => false
-    t.column "date_changed", :datetime
+    t.column "alert_id",     :integer,                               :null => false
+    t.column "user_id",      :integer,                               :null => false
+    t.column "alert_read",   :integer,   :limit => 1, :default => 0, :null => false
+    t.column "date_changed", :timestamp
   end
 
   add_index "notification_alert_recipient", ["user_id"], :name => "alert_read_by_user"

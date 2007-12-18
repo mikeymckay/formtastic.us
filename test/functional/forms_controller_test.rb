@@ -44,7 +44,7 @@ class FormsControllerTest < Test::Unit::TestCase
   
   def test_should_update_form
     put :update, :id => 1, :form => { }
-    assert_redirected_to form_path(assigns(:form))
+    assert_response :success
   end
   
   def test_should_destroy_form

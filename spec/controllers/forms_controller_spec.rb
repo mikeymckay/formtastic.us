@@ -4,13 +4,14 @@ describe FormsController do
 
  before(:each) do
     @form = mock("form")
+    @form.stub!(:name).and_return("Height/Weight")
     Form.stub!(:new).and_return(@form)
-    Form.stub!("find").and_return(@form)
+    Form.stub!(:find).and_return(@form)
   end
 
   it "should list all forms on GET to index" do
     @forms = [@form]
-    Form.stub!("find").and_return(@forms)
+    Form.stub!(:find).and_return(@forms)
     get 'index'
     assigns[:forms].should equal(@forms)
     response.should render_template("forms/index")

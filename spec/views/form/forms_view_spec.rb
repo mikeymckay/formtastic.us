@@ -35,6 +35,7 @@ describe "editing a form" do
     @height_weight = mock_model(Form)
     assigns[:form] = @height_weight
     @height_weight.stub!(:name).and_return("Height/Weight")
+    @height_weight.stub!(:description).and_return("A person's height and weight after eating ice cream")
 
     @weight_field = mock_model(Field)
     @weight_field.stub!(:type).and_return("Number")

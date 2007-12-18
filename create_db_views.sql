@@ -12,21 +12,3 @@ CREATE VIEW form_fields (id, form_id, field_id, field_number, field_part, page_n
 
 DROP VIEW IF EXISTS field_types;
 CREATE VIEW field_types (id, name, description, is_set, creator, date_created) AS SELECT * from field_type;
-
-DROP TABLE IF EXISTS field_attribute_types;
-CREATE TABLE `field_attribute_types` (
-  `id` INT(11) NOT NULL auto_increment, 
-  `name` varchar(255) NOT NULL, 
-  `description` varchar (255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-);
-
-DROP TABLE IF EXISTS field_attributes;
-CREATE TABLE `field_attributes` (
-  `id` INT(11) NOT NULL auto_increment, 
-  `field_id` INT(11) DEFAULT NULL, 
-  `form_field_id` INT(11) DEFAULT NULL, 
-  `field_attribute_type_id` INT(11) NOT NULL, 
-  `value` varchar (255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-);

@@ -1,4 +1,4 @@
--- MySQL dump 10.11
+-- MySQL dump 10.11 BLAH BLAH
 --
 -- Host: localhost    Database: formtastic_development
 -- ------------------------------------------------------

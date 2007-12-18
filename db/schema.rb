@@ -320,6 +320,13 @@ ActiveRecord::Schema.define() do
     t.column "description", :string
   end
 
+  create_table "field_attributes", :force => true do |t|
+    t.column "field_id",                :integer
+    t.column "form_field_id",           :integer
+    t.column "field_attribute_type_id", :integer, :null => false
+    t.column "value",                   :string
+  end
+
   create_table "field_type", :id => false, :force => true do |t|
     t.column "field_type_id", :integer,                                   :null => false
     t.column "name",          :string,   :limit => 50
@@ -330,29 +337,6 @@ ActiveRecord::Schema.define() do
   end
 
   add_index "field_type", ["creator"], :name => "user_who_created_field_type"
-
-  create_table "field_types", :force => true do |t|
-    t.column "name",         :string,   :limit => 50
-    t.column "description",  :text
-    t.column "is_set",       :boolean,                :default => false, :null => false
-    t.column "creator",      :integer,                :default => 0,     :null => false
-    t.column "date_created", :datetime,                                  :null => false
-  end
-
-  create_table "fields", :force => true do |t|
-    t.column "name",            :string,                 :default => "",    :null => false
-    t.column "description",     :text
-    t.column "field_type",      :integer
-    t.column "concept_id",      :integer
-    t.column "table_name",      :string,   :limit => 50
-    t.column "attribute_name",  :string,   :limit => 50
-    t.column "default_value",   :text
-    t.column "select_multiple", :boolean,                :default => false, :null => false
-    t.column "creator",         :integer,                :default => 0,     :null => false
-    t.column "date_created",    :datetime,                                  :null => false
-    t.column "changed_by",      :integer
-    t.column "date_changed",    :datetime
-  end
 
   create_table "form", :id => false, :force => true do |t|
     t.column "form_id",                   :integer,                                   :null => false
@@ -405,22 +389,6 @@ ActiveRecord::Schema.define() do
   add_index "form_field", ["parent_form_field"], :name => "form_field_hierarchy"
   add_index "form_field", ["creator"], :name => "user_who_created_form_field"
 
-  create_table "form_fields", :force => true do |t|
-    t.column "form_id",           :integer,               :default => 0, :null => false
-    t.column "field_id",          :integer,               :default => 0, :null => false
-    t.column "field_number",      :integer
-    t.column "field_part",        :string,   :limit => 5
-    t.column "page_number",       :integer
-    t.column "parent_form_field", :integer
-    t.column "min_occurs",        :integer
-    t.column "max_occurs",        :integer
-    t.column "required",          :boolean
-    t.column "changed_by",        :integer
-    t.column "date_changed",      :datetime
-    t.column "creator",           :integer,               :default => 0, :null => false
-    t.column "date_created",      :datetime,                             :null => false
-  end
-
   create_table "formentry_archive", :id => false, :force => true do |t|
     t.column "formentry_archive_id", :integer,                  :null => false
     t.column "form_data",            :text,     :default => "", :null => false
@@ -449,28 +417,6 @@ ActiveRecord::Schema.define() do
     t.column "error_msg",          :string
     t.column "creator",            :integer,  :default => 0,  :null => false
     t.column "date_created",       :datetime,                 :null => false
-  end
-
-  create_table "forms", :force => true do |t|
-    t.column "name",                      :string,                 :default => "",    :null => false
-    t.column "version",                   :string,   :limit => 50, :default => "",    :null => false
-    t.column "build",                     :integer
-    t.column "published",                 :integer,  :limit => 4,  :default => 0,     :null => false
-    t.column "description",               :text
-    t.column "encounter_type",            :integer
-    t.column "schema_namespace",          :string
-    t.column "template",                  :text
-    t.column "infopath_solution_version", :string,   :limit => 50
-    t.column "uri",                       :string
-    t.column "xslt",                      :text
-    t.column "creator",                   :integer,                :default => 0,     :null => false
-    t.column "date_created",              :datetime,                                  :null => false
-    t.column "changed_by",                :integer
-    t.column "date_changed",              :datetime
-    t.column "retired",                   :boolean,                :default => false, :null => false
-    t.column "retired_by",                :integer
-    t.column "date_retired",              :datetime
-    t.column "retired_reason",            :string
   end
 
   create_table "global_property", :force => true do |t|
@@ -593,10 +539,10 @@ ActiveRecord::Schema.define() do
   add_index "notification_alert", ["changed_by"], :name => "user_who_changed_alert"
 
   create_table "notification_alert_recipient", :id => false, :force => true do |t|
-    t.column "alert_id",     :integer,                               :null => false
-    t.column "user_id",      :integer,                               :null => false
-    t.column "alert_read",   :integer,   :limit => 1, :default => 0, :null => false
-    t.column "date_changed", :timestamp
+    t.column "alert_id",     :integer,                              :null => false
+    t.column "user_id",      :integer,                              :null => false
+    t.column "alert_read",   :integer,  :limit => 1, :default => 0, :null => false
+    t.column "date_changed", :datetime
   end
 
   add_index "notification_alert_recipient", ["user_id"], :name => "alert_read_by_user"
@@ -1092,5 +1038,87 @@ ActiveRecord::Schema.define() do
   add_index "users", ["creator"], :name => "user_creator"
   add_index "users", ["changed_by"], :name => "user_who_changed_user"
   add_index "users", ["voided_by"], :name => "user_who_voided_user"
+
+  create_view "field_types", "select `field_type`.`field_type_id` AS `id`,`field_type`.`name` AS `name`,`field_type`.`description` AS `description`,`field_type`.`is_set` AS `is_set`,`field_type`.`creator` AS `creator`,`field_type`.`date_created` AS `date_created` from `field_type`", :force => true do |v|
+    v.column :id
+    v.column :name
+    v.column :description
+    v.column :is_set
+    v.column :creator
+    v.column :date_created
+  end
+
+  create_view "fields", "select `field`.`field_id` AS `id`,`field`.`name` AS `name`,`field`.`description` AS `description`,`field`.`field_type` AS `field_type`,`field`.`concept_id` AS `concept_id`,`field`.`table_name` AS `table_name`,`field`.`attribute_name` AS `attribute_name`,`field`.`default_value` AS `default_value`,`field`.`select_multiple` AS `select_multiple`,`field`.`creator` AS `creator`,`field`.`date_created` AS `date_created`,`field`.`changed_by` AS `changed_by`,`field`.`date_changed` AS `date_changed` from `field`", :force => true do |v|
+    v.column :id
+    v.column :name
+    v.column :description
+    v.column :field_type
+    v.column :concept_id
+    v.column :table_name
+    v.column :attribute_name
+    v.column :default_value
+    v.column :select_multiple
+    v.column :creator
+    v.column :date_created
+    v.column :changed_by
+    v.column :date_changed
+  end
+
+  create_view "form_fields", "select `form_field`.`form_field_id` AS `id`,`form_field`.`form_id` AS `form_id`,`form_field`.`field_id` AS `field_id`,`form_field`.`field_number` AS `field_number`,`form_field`.`field_part` AS `field_part`,`form_field`.`page_number` AS `page_number`,`form_field`.`parent_form_field` AS `parent_form_field`,`form_field`.`min_occurs` AS `min_occurs`,`form_field`.`max_occurs` AS `max_occurs`,`form_field`.`required` AS `required`,`form_field`.`changed_by` AS `changed_by`,`form_field`.`date_changed` AS `date_changed`,`form_field`.`creator` AS `creator`,`form_field`.`date_created` AS `date_created` from `form_field`", :force => true do |v|
+    v.column :id
+    v.column :form_id
+    v.column :field_id
+    v.column :field_number
+    v.column :field_part
+    v.column :page_number
+    v.column :parent_form_field
+    v.column :min_occurs
+    v.column :max_occurs
+    v.column :required
+    v.column :changed_by
+    v.column :date_changed
+    v.column :creator
+    v.column :date_created
+  end
+
+  create_view "forms", "select `form`.`form_id` AS `id`,`form`.`name` AS `name`,`form`.`version` AS `version`,`form`.`build` AS `build`,`form`.`published` AS `published`,`form`.`description` AS `description`,`form`.`encounter_type` AS `encounter_type`,`form`.`schema_namespace` AS `schema_namespace`,`form`.`template` AS `template`,`form`.`infopath_solution_version` AS `infopath_solution_version`,`form`.`uri` AS `uri`,`form`.`xslt` AS `xslt`,`form`.`creator` AS `creator`,`form`.`date_created` AS `date_created`,`form`.`changed_by` AS `changed_by`,`form`.`date_changed` AS `date_changed`,`form`.`retired` AS `retired`,`form`.`retired_by` AS `retired_by`,`form`.`date_retired` AS `date_retired`,`form`.`retired_reason` AS `retired_reason` from `form`", :force => true do |v|
+    v.column :id
+    v.column :name
+    v.column :version
+    v.column :build
+    v.column :published
+    v.column :description
+    v.column :encounter_type
+    v.column :schema_namespace
+    v.column :template
+    v.column :infopath_solution_version
+    v.column :uri
+    v.column :xslt
+    v.column :creator
+    v.column :date_created
+    v.column :changed_by
+    v.column :date_changed
+    v.column :retired
+    v.column :retired_by
+    v.column :date_retired
+    v.column :retired_reason
+  end
+
+  create_view "locations", "select `location`.`location_id` AS `id`,`location`.`name` AS `name`,`location`.`description` AS `description`,`location`.`address1` AS `address1`,`location`.`address2` AS `address2`,`location`.`city_village` AS `city_village`,`location`.`state_province` AS `state_province`,`location`.`postal_code` AS `postal_code`,`location`.`country` AS `country`,`location`.`latitude` AS `latitude`,`location`.`longitude` AS `longitude`,`location`.`parent_location_id` AS `parent_location_id`,`location`.`creator` AS `creator`,`location`.`date_created` AS `date_created` from `location`", :force => true do |v|
+    v.column :id
+    v.column :name
+    v.column :description
+    v.column :address1
+    v.column :address2
+    v.column :city_village
+    v.column :state_province
+    v.column :postal_code
+    v.column :country
+    v.column :latitude
+    v.column :longitude
+    v.column :parent_location_id
+    v.column :creator
+    v.column :date_created
+  end
 
 end

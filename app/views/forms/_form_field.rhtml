@@ -1,8 +1,8 @@
   <li class="fields" id="item_<%=form_field.id%>">
   <% field = form_field.field %>
+    <%= link_to_remote "x",{:url => {:controller => "form_fields", :action => "destroy", :id => form_field.id}, :confirm => "Remove #{field.name}?", :method => "delete"}, :class => "delete_link" %>
     <span class="name"><%= field.name %></span>
     <%#= link_to_remote "Destroy", :url => form_field_path(form_field), :confirm => "Are you sure?", :method => "delete"%>
-    <%= link_to_remote "Destroy", :url => {:controller => "form_fields", :action => "destroy", :id => form_field.id}, :confirm => "Are you sure?", :method => "delete"%>
 
     <%if field.type == "select" or field.type == "multi_select" %>
       <%= field.concept.answer_options.collect{|concept|concept.name}.join ":" %>

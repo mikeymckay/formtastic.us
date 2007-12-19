@@ -4,6 +4,7 @@
 
 <% form_for(:form, :url => forms_path) do |f| %>
   <p>
+    Name <%= f.text_field :name %>
     <%= submit_tag "Create" %>
   </p>
 <% end %>

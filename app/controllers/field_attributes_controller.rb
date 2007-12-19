@@ -22,4 +22,11 @@ class FieldAttributesController < ApplicationController
     @field_attribute = FieldAttribute.find(params[:id])
     @field_attribute.update_attributes(params[:field_attribute])
   end
+
+  # DELETE
+  def destroy
+    @field_attribute = FieldAttribute.find(params[:id])
+    @field_attribute.destroy
+    render :text => "Destroyed #{@field_attribute.name}"
+  end
 end

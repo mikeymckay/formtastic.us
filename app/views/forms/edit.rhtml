@@ -8,6 +8,16 @@
 .field_attribute_value{
   border: none;
 }
+ul{
+  list-style: none;
+  
+}
+.delete_link{
+  text-decoration: none;
+  font-weight: bold;
+  background-color: lightgrey;
+  color: white;
+}
 </style>
 
 <% form_remote_for(:form, :url => form_path(@form), :success => visual_effect(:highlight, 'form_form') ,:html => { :id => "form_form" , :method => :put }) do |f| %>
@@ -24,6 +34,7 @@
 <script>
   function update_user_interface_plugins(){
     // Remove all unchecked options from description
+    $('form_description').value = ""
     $('form_form').getInputs('radio', 'user_interface_plugins').each(function(item){
       $('form_description').value = $('form_description').value.replace("load_stylesheet: " + item.value + ".css;","")
       $('form_description').value = $('form_description').value.replace("load_javascript: " + item.value + ".js;","")
@@ -60,5 +71,5 @@
 <span id="blah"></span>
 
 
-<%= link_to 'Show', form_path(@form) %> |
-<%= link_to 'Back', forms_path %>
+<%= link_to 'Render form', form_path(@form) %> |
+<%= link_to 'List forms', forms_path %>

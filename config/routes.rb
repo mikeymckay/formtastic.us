@@ -7,6 +7,7 @@ ActionController::Routing::Routes.draw do |map|
     end
   end
 
+  map.resources :observations
 
   map.resources :field_attribute_types
 

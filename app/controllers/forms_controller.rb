@@ -39,7 +39,7 @@ class FormsController < ApplicationController
     respond_to do |format|
       if @form.save
         flash[:notice] = 'Form was successfully created.'
-        format.html { redirect_to form_url(@form) }
+        format.html { redirect_to edit_form_path(@form) }
         format.xml  { head :created, :location => form_url(@form) }
       else
         format.html { render :action => "new" }

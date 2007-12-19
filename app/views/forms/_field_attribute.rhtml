@@ -1,6 +1,7 @@
-<li>
-  <% field_attribute_element_id = "field_attribute_#{field_attribute.id}" %>
-  <span id="<%=field_attribute_element_id%>"><%= field_attribute.name %>:</span>
+<% field_attribute_element_id = "field_attribute_#{field_attribute.id}" %>
+<li id="li_<%= field_attribute_element_id%>">
+    <%= link_to_remote "x", {:url => {:controller => "field_attributes", :action => "destroy", :id => field_attribute.id}, :success => visual_effect(:fade, "li_#{field_attribute_element_id}"), :confirm => "Remove #{field_attribute.name}?", :method => "delete"}, :class => "delete_link" %>
+    <span id="<%=field_attribute_element_id%>"><%= field_attribute.name %>:</span>
   <%= render :partial => 'forms/field_attribute_value', :locals => {:field_attribute => field_attribute} %>
   <script>
     new Tip("<%= field_attribute_element_id %>", "<%= escape_javascript(field_attribute.field_attribute_type.description) %>", {title: "<%= field_attribute.name%>"  , hook: {target: 'bottomLeft', tip: 'topLeft'}})

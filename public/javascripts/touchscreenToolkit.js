@@ -1235,7 +1235,7 @@ function cancelEntry() {
   //disableTouchscreenInterface();
   //window.location.reload();
   
-  window.location.href = "/patient/menu?no_auto_load_forms=true";
+  window.location.href = document.referrer
 }
 
 // format the given element's value for display on the Progress Indicator

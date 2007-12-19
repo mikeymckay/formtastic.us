@@ -1,18 +1,16 @@
-<% @form.description.match(/load_javascript: *(.*);*?/)[1].split(/, */).each do |javascript_location| %>
+<% @form.description.match(/load_javascript: *(.*?);+/)[1].split(/, */).each do |javascript_location| %>
   <%= javascript_include_tag javascript_location%>
 <% end rescue nil %>
 
-<% @form.description.match(/load_stylesheet: *(.*);*?/)[1].split(/, */).each do |stylesheet_location| %>
+<% @form.description.match(/load_stylesheet: *(.*?);+/)[1].split(/, */).each do |stylesheet_location| %>
   <%= stylesheet_link_tag stylesheet_location%>
 <% end rescue nil %>
 
 <%= @form.name %>
 
-<% form_tag do %>
-
+<% form_tag "/observations/" do %>
   <% @form.form_fields_sorted.each do |form_field|%>
     <%= render :partial => "fields/field_element", :locals => {:form_field => form_field} %>
   <% end %>
   <%= submit_tag "Save" %>
-
 <% end %>
